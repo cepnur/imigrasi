@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <div class="header-primary bg-white relative">
+            <div
+                class="container flex items-center text-white justify-between mx-auto py-5 md:py-7 text-lg"
+            >
+                
+                <nav class="right-navigation flex items-center justify-end gap-5 lg:gap-8" >
+                    <ul class="hidden text-dark-light items-center space-x-4 text-sm tracking-wide lg:flex gap-5" >
+                        <li v-for="item in $page.props.primary_menu" :key="item.id" >
+                            <!--
+                                Elementor doesn't like Inertia-links so we have to use <a> for elementor pages...
+                            -->
+                            <a :href="$page.props.site.url + item.url" v-if="!item.isElementor">{{ item.title }}</a>
+                            <a :href="$page.props.site.url + item.url" v-if="item.isElementor">{{ item.title }}</a>
+                            <!-- SubMenu -->
+                            <ul v-if="item.children" class="submenu">
+                                <li v-for="(subitem, subindex) in item.children" :key="subindex" >
+                                    <a :href="$page.props.site.url + subitem.url">{{ subitem.title}}</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <a :href="button_setting.header_button_url" class="btn btn-primary text-white paragraph-2 font-semibold hidden lg:flex" 
+                        v-if="button_setting.header_button_text !== '#'">{{button_setting.header_button_text}}</a>
+                    <div v-click-outside="closeSearch">
+                        <button @click="showSearch()" class="p-0 m-0 flex">
+                            <svg-vue
+                                icon="search"
+                                alt="search button"
+                                class="icon"
+                                width="24px"
+                                height="24px"
+                            ></svg-vue>
+                        </button>
+                        <SearchBar :class="{ activeSearch :  searchBar }" class="show-search" :closeSearchBar="closeSearch"/>
+                        <!-- <div
+                            :class="{ 'active' : showSearch }"
+                            class="search-bar"
+                            v-html="$page.props.search_form"
+                        ></div> -->
+                    </div>
+                    <button class=" lg:hidden"
+                        v-if="showDropdown"
+                        @click="showDropdown = !showDropdown"
+                    >
+                        <svg-vue
+                            icon="menu-outline"
+                            width="24"
+                            height="24"
+                        ></svg-vue>
+                    </button>
+                    <button v-else @click="showDropdown = !showDropdown">
+                        <svg-vue icon="close" width="24" height="24"></svg-vue>
+                    </button>
+                </nav>
+            </div>
+        </div>
+        <div :class="{ active: showDropdown }" class="menu-mobile">
+            <div class="container py-16">
+                <ul
+                    class="flex flex-col py-14 text-white items-center text-sm tracking-wide md:flex gap-1 lg:gap-8"
+                >
+                    <li  v-for="item in primary_menu" :key="item.id" class="w-full" 
+                    :class="item.children.length != 0 ? 'has-submenu':''">
+                        <!--
+                                Elementor doesn't like Inertia-links so we have to use <a> for elementor pages...
+                            -->
+                        <a :href="$page.props.site.url + item.url" v-if="!item.isElementor">{{ item.title }}</a>
+                        <a :href="$page.props.site.url + item.url" v-if="item.isElementor">{{ item.title }}</a>
+                        <span v-if="item.children.length != 0" @click="openSubmenu($event)"></span>
+
+                        <!-- SubMenu -->
+                        <ul v-if="item.children.length != 0" class="submenu">
+                            <li v-for="(subitem, subindex) in item.children" :key="subindex" >
+                                <a :href="$page.props.site.url + subitem.url">{{ subitem.title}}</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+                <div class="sosmed flex justify-center gap-3">
+                    <a href="#" v-if="sosial_media.sm_facebook !== '#'">
+                        <svg-vue icon="facebook" width="24" height="24"></svg-vue>
+                    </a>
+                    <a href="#"  v-if="sosial_media.sm_instagram !== '#'">
+                        <svg-vue icon="instagram" width="24" height="24"></svg-vue>
+                    </a>
+                    <a href="#" v-if="sosial_media.sm_twitter !== '#'">
+                        <svg-vue icon="twitter" width="24" height="24"></svg-vue>
+                    </a>
+                    <a href="#" v-if="sosial_media.sm_linkedIn !== '#'">
+                        <svg-vue icon="linkedIn" width="24" height="24"></svg-vue>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </header>
+</body>
+</html>

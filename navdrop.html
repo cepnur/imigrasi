@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        body {
+          font-family: Arial, Helvetica, sans-serif;
+        }
+        
+        .navbar {
+          overflow: hidden;
+          background-color: #333;
+        }
+        
+        .navbar a {
+          float: left;
+          font-size: 16px;
+          color: white;
+          text-align: center;
+          padding: 14px 16px;
+          text-decoration: none;
+        }
+        
+        .dropdown {
+          float: left;
+          overflow: hidden;
+        }
+        
+        .dropdown .dropbtn {
+          font-size: 16px;  
+          border: none;
+          outline: none;
+          color: white;
+          padding: 14px 16px;
+          background-color: inherit;
+          font-family: inherit;
+          margin: 0;
+        }
+        
+        .navbar a:hover, .dropdown:hover .dropbtn {
+          background-color: red;
+        }
+        
+        .dropdown-content {
+          display: none;
+          position: absolute;
+          background-color: #f9f9f9;
+          min-width: 160px;
+          box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+          z-index: 1;
+        }
+        
+        .dropdown-content a {
+          float: none;
+          color: black;
+          padding: 12px 16px;
+          text-decoration: none;
+          display: block;
+          text-align: left;
+        }
+        
+        .dropdown-content a:hover {
+          background-color: #ddd;
+        }
+        
+        .dropdown:hover .dropdown-content {
+          display: block;
+        }
+        </style>
+    <script>
+        tailwind.config = {
+          theme: {
+            container: {
+                center: true,
+                padding: {
+                    DEFAULT: '1rem',
+                    sm: '2rem',
+                    lg: '4rem',
+                    xl: '5rem',
+                    '2xl': '6rem',
+                },
+            },
+            extend: {
+              colors: {
+                clifford: '#da373d',
+              }
+            }
+          }
+        }
+      </script>
+    <title>Document</title>
+</head>
+<body>
+    <div class="overflow-hidden bg-[#333] ">
+        <a class="float-left text-[16px] text-white text-center px-3.5 py-4 hover:yellow " href="">home</a>
+        <a class="float-left text-[16px] text-white text-center px-3.5 py-4 hover:yellow " href="">news</a>
+        <a class="float-left text-[16px] text-white text-center px-3.5 py-4 hover:yellow " href="">berita</a>
+
+        <div class="float-left overflow-hidden">
+            <button class="text-base text-white py-3.5 px-4 bg-red  ">dropdown
+                <i class="fa fa-caret-down"></i>
+            </button>
+
+            <div class="absolute bg-[#f9f9f9] w-40 shadow-md z-0 block ">
+                <a class="text-black px-3 py-4 text-left block" href="">link1</a>
+                <a class="text-black px-3 py-4 text-left block" href="">link2</a>
+                <a class="text-black px-3 py-4 text-left block" href="">link3</a>
+                <a class="text-black px-3 py-4 text-left block" href="">lick4</a>
+                <a class="text-black px-3 py-4 text-left block" href="">lock5</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <script>
+        tailwind.config = {
+          theme: {
+            container: {
+                center: true,
+                padding: {
+                    DEFAULT: '1rem',
+                    sm: '2rem',
+                    lg: '4rem',
+                    xl: '5rem',
+                    '2xl': '6rem',
+                },
+            },
+            extend: {
+              colors: {
+                clifford: '#da373d',
+              }
+            }
+          }
+        }
+      </script>
+    <title>Document</title>
+</head>
+<body>
+    <!-- Header -->
+    <section class="py-3">
+        <div class="container mx-auto flex justify-between ">
+            <div class="flex items-center justify-center gap-2.5 ">
+                <img class="" src="./img/image1.png" alt="">
+                <div class="gap-1">
+                    <h1 class=" font-bold">
+                        Kantor imigrasi Kelas XXX (edit)
+                    </h1>
+                    <hr class="border-black">
+                    <p>
+                        Kantor Wilayah Kemenkumham Nama <br> Provinsi (edit)
+                    </p>
+                </div>
+            </div>
+            <div class="flex gap-4 py-7">
+                <a href="http://" target="_blank" rel="noopener noreferrer"><img src="./img/instagram.png" alt=""></a>
+                <a href="http://" target="_blank" rel="noopener noreferrer"><img src="./img/wa.png" alt=""></a>
+                <a href="http://" target="_blank" rel="noopener noreferrer"><img src="./img/youtube.png" alt=""></a>
+                <a href="http://" target="_blank" rel="noopener noreferrer"><img src="./img/linkedin.png" alt=""></a>
+                <a href="http://" target="_blank" rel="noopener noreferrer"><img src="./img/twiter.png" alt=""></a>
+            </div>
+        </div>
+    </section>
+    <hr class="border-gray-300">
+    <!-- Header end -->
+    
+    <!-- Nav -->
+    <section>
+        <div class=" container mx-auto flex justify-between  ">
+            <nav class="  ">
+                <ul class=" flex gap-8 py-8 text-gray-400 fontFamily-[inter] text-xl  ">
+                    <li><a href="" class="hover:text-[#005046] hover:font-bold">Profile</a>
+                    </li>
+                    <li><a href="" class="hover:text-[#005046] hover:font-bold">Regulasi</a>
+                    </li>
+                    <li><a href="" class="hover:text-[#005046] hover:font-bold">Publikasi</a>               
+                    </li>
+                    <li><a href="" class="hover:text-[#005046] hover:font-bold">Informasi Publik</a>               
+                    </li>
+                    <li><a href="" class="hover:text-[#005046] hover:font-bold">Prosedur Pelayanan</a>              
+                    </li>
+                    <li><a href="" class="hover:text-[#005046] hover:font-bold">Pengaduan</a>               
+                    </li>
+                    <li><a href="" class="hover:text-[#005046] hover:font-bold">Galery</a>               
+                    </li>
+                    <li><a href="" class="hover:text-[#005046] hover:font-bold">News</a>              
+                    </li>
+                    <li><a href="" class="hover:text-[#005046] hover:font-bold">Kontak Kami</a>             
+                     
+                </ul>
+            </nav>
+            <div class="flex flex-row justify-between items-center gap-4 py-6 px-2 ">
+                <button type="button" class="flex">
+                    <img src="./img/Group23.png" alt=""></button>
+                <button type="button" class="bg-[#005046] rounded-xl order-1 py-4 px-8 text-white hover:bg-green-800">Register</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="container bg-gray-50 h-60 py-16">
+        <p class=" font-bold text-3xl   ">
+            Search 
+        </p>
+        <p class=" text-gray-400 pt-6 ">
+            Prebör domisaning. Kemkastrering. Fagt kaskade. Bist decissa. Stereodiktisk vasyns att preteng.
+        </p>
+    </section>
+
+    <section>
+        <div class="container flex flex-col mx-auto ">
+            <div class="flex pb-24">
+                <div class="pt-8">
+                    <div class="flex flex-col gap-4 bg-gray-50 rounded-lg py-10 px-10 font-bold">
+                        <div class="flex justify-between">
+                            <button class="">
+                                Filter Us
+                            </button>
+                            <button type="button">
+                                <img src="./img/s1.png" alt="">
+                            </button>
+                        </div>
+                        <div class="flex flex-col gap-2">
+                            <p class=" ">Search</p>
+                            <div class="flex justify-between relative">
+                                <input type="text" placeholder="Search" class=" py-3 bg-white rounded-full font-semibold px-14">
+                                    <img src="./img/Group23.png" alt="" class="absolute left-64 top-4 " >
+                            </div>
+                        </div>
+                        <div class="flex flex-col gap-4">
+                            <p class=" ">Categories</p>
+                            <div class="flex justify-between">
+                                <select style="border-radius: 100px;" name="cars" id="cars" class="py-3 px-24">
+                                    <option selected disabled value="volvo">Categories</option>
+                                    <option value="saab">Saab</option>
+                                    <option value="opel">Opel</option>
+                                    <option value="audi">Audi</option>
+                                  </select>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex flex-col">
+                    <div class="flex gap-6 pt-8 justify-end">
+                        <div class="">
+                            <label for="" class="font-bold pr-2 ">Show</label>
+                                <select name="" id="" class="bg-white py-3 border-2 rounded-xl px-4 text-[#005046] ">
+                                    <option value="">4 Result per page</option>
+                                    <option value="">6 Result per page</option>
+                                    <option value="">8 Result per page</option>
+                                </select> 
+                        </div>
+                        <div class="">
+                            <label for="" class="font-bold pr-2">Ordering</label>
+                                <select name="" id="" class="bg-white py-3 border-2 rounded-xl px-4 text-[#005046]">
+                                    <option value="">Newest First</option>
+                                    <option value="">Latest First</option>
+                                    <option value="">Date Change</option>
+                                </select>     
+                        </div>
+                       
+                        <div class="flex gap-4">
+                            <button class="hover:text-[#005046] text-gray-200">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-8 h-8">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6A2.25 2.25 0 016 3.75h2.25A2.25 2.25 0 0110.5 6v2.25a2.25 2.25 0 01-2.25 2.25H6a2.25 2.25 0 01-2.25-2.25V6zM3.75 15.75A2.25 2.25 0 016 13.5h2.25a2.25 2.25 0 012.25 2.25V18a2.25 2.25 0 01-2.25 2.25H6A2.25 2.25 0 013.75 18v-2.25zM13.5 6a2.25 2.25 0 012.25-2.25H18A2.25 2.25 0 0120.25 6v2.25A2.25 2.25 0 0118 10.5h-2.25a2.25 2.25 0 01-2.25-2.25V6zM13.5 15.75a2.25 2.25 0 012.25-2.25H18a2.25 2.25 0 012.25 2.25V18A2.25 2.25 0 0118 20.25h-2.25A2.25 2.25 0 0113.5 18v-2.25z" />
+                                  </svg>
+                            </button>
+                            <button class="hover:text-[#005046]">
+                                <svg class="h-8 w-8" viewBox="0 0 24 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M10.6667 16H13.3333C14.0667 16 14.6667 15.4 14.6667 14.6667C14.6667 13.9333 14.0667 13.3333 13.3333 13.3333H10.6667C9.93333 13.3333 9.33333 13.9333 9.33333 14.6667C9.33333 15.4 9.93333 16 10.6667 16ZM0 1.33333C0 2.06667 0.6 2.66667 1.33333 2.66667H22.6667C23.4 2.66667 24 2.06667 24 1.33333C24 0.6 23.4 0 22.6667 0H1.33333C0.6 0 0 0.6 0 1.33333ZM5.33333 9.33333H18.6667C19.4 9.33333 20 8.73333 20 8C20 7.26667 19.4 6.66667 18.6667 6.66667H5.33333C4.6 6.66667 4 7.26667 4 8C4 8.73333 4.6 9.33333 5.33333 9.33333Z" fill="#E6E6E6"/>
+                                    </svg>     
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="grid grid-cols-2 gap-6 pt-10 pl-10">
+                        <div class="flex flex-col gap-4">
+                            <img src="./img/s21.png" alt="" class="">
+                            <div class="w-3/4 flex flex-col gap-3">
+                            <p class="text-2xl font-bold">Lorem Ipsum Lorem Ipsum Lorem Ipsum</p>
+                            <p class="text-gray-300">September 14, 2023</p>
+                            <p class="text-gray-400">Jumat, 27 Agustus 2021. Bea Cukai Sangatta Melaksana...</p>
+                            </div>
+                        </div>
+                        <div class="flex flex-col gap-4">
+                            <img src="./img/s22.png" alt="" class="">
+                            <div class="w-3/4 flex flex-col gap-3">
+                            <p class="text-2xl font-bold">Lorem Ipsum Lorem Ipsum Lorem Ipsum</p>
+                            <p class="text-gray-300">September 14, 2023</p>
+                            <p class="text-gray-400">Jumat, 27 Agustus 2021. Bea Cukai Sangatta Melaksana...</p>
+                            </div>
+                        </div>
+                        <div class="flex flex-col gap-4">
+                            <img src="./img/s21.png" alt="" class="">
+                            <div class="w-3/4 flex flex-col gap-3">
+                            <p class="text-2xl font-bold">Lorem Ipsum Lorem Ipsum Lorem Ipsum</p>
+                            <p class="text-gray-300">September 14, 2023</p>
+                            <p class="text-gray-400">Jumat, 27 Agustus 2021. Bea Cukai Sangatta Melaksana...</p>
+                            </div>
+                        </div>
+                        <div class="flex flex-col gap-4">
+                            <img src="./img/s22.png" alt="" class="">
+                            <div class="w-3/4 flex flex-col gap-3">
+                            <p class="text-2xl font-bold">Lorem Ipsum Lorem Ipsum Lorem Ipsum</p>
+                            <p class="text-gray-300">September 14, 2023</p>
+                            <p class="text-gray-400">Jumat, 27 Agustus 2021. Bea Cukai Sangatta Melaksana...</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class=" flex justify-center items-center pt-10">
+                    <button type="button" class="bg-[#005046] rounded-xl py-4 px-6 text-white hover:bg-green-800">Load More</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-[#00221E] py-20">
+        <div class="container mx-auto text-white ">
+            <div class="grid lg:grid-cols-8 grid-cols-3">
+                <div class="lg:col-span-3 col-span-5 sm:pb-5 ">
+                    <a href="/">
+                        <div class="flex gap-4">
+                        <img src="./img/image1.png" alt="" class="w-1/6">
+                        <div class="">
+                            <h1 class="font-semibold">Kantor imigrasi Kelas XXX (edit)</h1>
+                            <hr>
+                            <p class="">Kantor Wilayah Kemenkumham Nama Provinsi (edit)</p>
+
+                        </div>
+                        </div>
+                        <p class="text-base pt-10 ">Prebör domisaning. Kemkastrering. Fagt kaskade. Bist decissa. Stereodiktisk vasyns att preteng. Mons byning fihör. Pore tolig. Epire kanesk. Monosa medelgam tisk.</p>
+                        <ul class="flex mt-10 gap-5 justify-center md:justify-start ">
+                            <li><img src="./img/instagram.png" alt=""></li>
+                            <li><img src="./img/wa.png" alt=""></li>
+                            <li><img src="./img/youtube.png" alt=""></li>
+                            <li><img src="./img/linkedin.png" alt=""></li>
+                            <li><img src="./img/twiter.png" alt=""></li>
+                        </ul>
+                    </a>
+
+                </div>
+                <div class="sm:col-span-1 col-span-2 ">
+                    <h1 class="font-semibold">
+                        Home
+                    </h1>
+                    <ul class="flex flex-col gap-6 mt-6 space-y-1">
+                        <li><a href="" class="hover:text-green-200">Beranda</a></li>
+                        <li><a href="" class="hover:text-green-200">Layanan Keimigrasian</a></li>
+                        <li><a href="" class="hover:text-green-200">Gallery</a></li>
+                        <li><a href="" class="hover:text-green-200">Our News</a></li>
+                    </ul>
+                </div>
+
+                <div class="sm:col-span-2 col-span-3 ">
+                    <h1 class="font-semibold">
+                        Contact
+                    </h1>
+                    <ul class="flex flex-col gap-6 mt-6 space-y-1">
+                        <li><a href=""><img src="./img/co1.png" alt="" class="float-left mr-2 py-1"> (406) 555-0120</a></li>
+                        <li><a href="" class="hover:text-green-200"><img src="./img/co2.png" alt="" class="float-left mr-2 py-1"> Imigrasisukabumi123@gmail.com</a></li>
+                        <li><a href=""><img src="./img/co3.png" alt="" class="float-left mr-2 py-1">2972 Westheimer Rd. Santa Ana, Illinois 85486 </a></li>
+                    </ul>
+                </div>
+
+                <div class="sm:col-span-2 col-span-4 ">
+                    <h1 class="font-semibold">
+                        Maps Location
+                    </h1>
+                    <ul class="flex flex-col gap-6 mt-6 space-y-1">
+                        <li><a href=""><img src="./img/maps.png" alt="" class=""></a></li>
+                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="container mx-auto mt-12 ">
+            <p class="text-white grid justify-end">
+                © 2022 Mangcoding. All rights reserved.
+            </p>
+        </div>
+    </section>
+    
+</body>
+</html>

@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script>
+        tailwind.config = {
+          theme: {
+            container: {
+                center: true,
+                padding: {
+                    DEFAULT: '1rem',
+                    sm: '2rem',
+                    lg: '4rem',
+                    xl: '5rem',
+                    '2xl': '6rem',
+                },
+            },
+            extend: {
+              colors: {
+                clifford: '#da373d',
+              }
+            }
+          }
+        }
+      </script>
+    <title>Document</title>
+</head>
+<body>
+
+  <nav class="container flex justify-between px-4 py-8 mx-auto bg-white">
+    
+    <div class="hidden space-x-8 lg:flex">
+      <a href="#">Menu 1</a>
+      <a href="#">Menu 2</a>
+      <a href="#">Menu 3</a>
+      <a href="#">Menu 4</a>
+      <a href="#">Menu 4</a>
+      <a href="#">Menu 4</a>
+      <a href="#">Menu 4</a>
+      <a href="#">Menu 4</a>
+      <a href="#">Menu 4</a>
+    </div>
+    <div class="flex lg:hidden">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        class="w-6 h-6"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke="currentColor"
+      >
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="2"
+          d="M4 6h16M4 12h16M4 18h16"
+        />
+      </svg>
+    </div>
+  </nav>
+
+    <section class="flex flex-col md:flex-row md:h-[680px] bg-gradient-to-b from-[#F9BC3F] to-[#407A77] gap-6 md:gap-48 px-6 md:px-32">
+        <div class="flex flex-col md:w-[777px] md:h-[375px] gap-4 md:gap-6 py-20 md:py-40 pl-4 md:pl-24 font-family-[inter] order-2 md:order-0">
+            <div class="gap-2">
+                <h2 class="text-white font-normal text-xl md:text-3xl order-0">
+                    Lorem Ipsum
+                </h2>
+                <p class="text-white font-bold text-3xl md:text-5xl not-italic order-1">
+                    Prebör domisaning. Kemkastrering. Fagt kaskade. Bist decissa.
+                </p>
+            </div>
+            <div>
+                <p class="text-white font-normal text-sm md:text-xl not-italic order-2">
+                    Prebör domisaning. Kemkastrering. Fagt kaskade. Bist decissa. Stereodiktisk vasyns att preteng.
+                    Mons byning fihör. Pore tolig. Epire kanesk. Monosa medelgam tisk.
+                </p>
+            </div>
+            <div class="flex flex-row gap-3">
+                <a href=""><img src="./img/Appstore.png" alt="" class="w-[120px] h-[36px]"></a>
+                <a href=""><img src="./img/playstore.png" alt="" class="w-[120px] h-[36px]"></a>
+            </div>
+        </div>
+    
+        <img src="./img/image3.png" alt="" class="w-full md:w-[405px] h-auto md:h-[650px] order-1 md:order-2">
+    </section>
+    
+
+    <section class="container mx-auto py-8 px-4 sm:px-6 lg:px-8 flex flex-col items-center gap-6">
+        <img src="./img/Logolayanan.png" alt="" class="w-28 h-28 md:w-36 md:h-36 lg:w-44 lg:h-44 order-0">
+        <div class="w-full md:w-4/5 lg:w-3/4 flex flex-col items-center gap-10 order-1">
+          <div class="w-full md:w-3/4 lg:w-2/3 flex flex-col items-center gap-3">
+            <h2 class="not-italic font-bold text-2xl text-[#1A1A1A]">
+              Layanan Keimigrasian
+            </h2>
+            <p class="font-normal text-base text-[#969696] text-center">
+              Beberapa Layanan yang kami sediakan untuk kalian semua lorem ipsum lorem ipsum lorem ipsuum
+            </p>
+          </div>
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <button type="button" class="bg-white drop-shadow-md rounded-lg px-4 py-6 text-left w-full">
+              <img src="./img/exp1.png" alt="" class="w-10 h-10 md:w-12 md:h-12 lg:w-14 lg:h-14">
+              <h2 class="font-bold text-lg text-black pt-6">
+                Layanan Visa Online
+              </h2>
+              <p class="font-normal text-gray-600 text-base pt-4">
+                Berisi seluruh informasi mengenai prosedur permohonan visa online lengkap dengan persyaratannya dan informasi tentang jenis visa tersebut
+              </p>
+              <p class="font-bold text-[#005046] text-base pt-4">
+                More Information
+              </p>
+            </button>
+            <button type="button" class="bg-white drop-shadow-md rounded-lg px-4 py-6 text-left w-full">
+              <img src="./img/exp2.png" alt="" class="w-10 h-10 md:w-12 md:h-12 lg:w-14 lg:h-14">
+              <h2 class="font-bold text-lg text-black pt-6">
+                Layanan E-SRPI
+              </h2>
+              <p class="font-normal text-gray-600 text-base pt-4">
+                Layanan untuk membantu masyarakat Indonesia mendapatkan Surat Rekomendasi Pemerintah Indonesia yang ditujukan ke Kedutaan Besar Australia untuk mengajukan Visa Australia tipe "Work and Holiday".
+              </p>
+              <p class="font-bold text-[#005046] text-base pt-4">
+                More Information
+              </p>
+            </button>
+            <button type="button" class="bg-white drop-shadow-md rounded-lg px-4 py-6 text-left w-full">
+              <img src="./img/exp3.png" alt="" class="w-10 h-10 md:w-12 md:h-12 lg:w-14 lg:h-14">
+              <h2 class="font-bold text-lg text-black pt-6">
+                Layanan APQA
+              </h2>
+              <p class="font-normal text-gray-600 text-base pt-4">
+                Layanan untuk Pelaporan dari setiap Penjamin (sponsor) dan Pemilik/Pengurus tempat penginapan yang memberikan kesempatan menginap bagi Orang Asing kepada Kantor Imigrasi setempat.
+            </p>
+            <p class="font-bold text-[#005046] text-base pt-4">
+              More Information
+            </p>
+            </button>
+            <button type="button" class="bg-white drop-shadow-md rounded-lg px-4 py-6 text-left w-full">
+              <img src="./img/exp3.png" alt="" class="w-10 h-10 md:w-12 md:h-12 lg:w-14 lg:h-14">
+              <h2 class="font-bold text-lg text-black pt-6">
+                Whistle Blowing System
+              </h2>
+              <p class="font-normal text-gray-600 text-base pt-4">
+                Layanan pelaporan pelanggaran di Lingkungan Kementerian Hukum dan HAM RI (UPT/Kanwil)
+            </p>
+            <p class="font-bold text-[#005046] text-base pt-4">
+              More Information
+            </p>
+            </button>
+            <button type="button" class="bg-white drop-shadow-md rounded-lg px-4 py-6 text-left w-full">
+              <img src="./img/exp3.png" alt="" class="w-10 h-10 md:w-12 md:h-12 lg:w-14 lg:h-14">
+              <h2 class="font-bold text-lg text-black pt-6">
+                Layanan Izin Tinggal
+              </h2>
+              <p class="font-normal text-gray-600 text-base pt-4">
+                Aplikasi berbasis web yang bertujuan untuk memberikan layanan Izin Tinggal Keimigrasian secara online kepada pemohon Izin Tinggal Keimigrasian.
+            </p>
+            <p class="font-bold text-[#005046] text-base pt-4">
+              More Information
+            </p>
+            </button>
+            <button type="button" class="bg-white drop-shadow-md rounded-lg px-4 py-6 text-left w-full">
+              <img src="./img/exp3.png" alt="" class="w-10 h-10 md:w-12 md:h-12 lg:w-14 lg:h-14">
+              <h2 class="font-bold text-lg text-black pt-6">
+                Aplikasi Lapor
+              </h2>
+              <p class="font-normal text-gray-600 text-base pt-4">
+                Layanan penyampaian semua aspirasi dan pengaduan masyarakat Indonesia melalui beberapa kanal pengaduan yaitu website www.lapor.go.id, SMS 1708 (Telkomsel, Indosat, Three), Twitter @lapor1708 serta aplikasi mobile.
+            </p>
+            <p class="font-bold text-[#005046] text-base pt-4">
+              More Information
+            </p>
+            </button>
+        </div>
+    </div>
+    </section>
+
+    <section class=" container mx-auto flex flex-col md:flex-row items-center py-8 md:py-12 px-4 md:px-28 w-full md:h-[592px] bg-[#F2F6F6] gap-6">
+        <img src="./img/pas1.png" alt="" class="w-full md:w-[608px] h-[512px] md:order-0">
+        <div class="flex flex-col items-start gap-4 md:w-[608px] h-[320px] md:order-1">
+            <p class="text-base font-normal text-[#005046]">
+                Application
+            </p>
+            <p class="font-bold text-black text-2xl">
+                Layanan Paspor
+            </p>
+            <p class="text-base font-normal text-[#969696]">
+                Prebör domisaning. Kemkastrering. Fagt kaskade. Bist decissa. Stereodiktisk vasyns att preteng. Mons byning fihör. Pore tolig.
+            </p>
+            <button type="button" class="font-bold text-base text-[#005046]">
+                Informasi Pelayanan Paspor Republik Indonesia
+            </button>
+            <button type="button" class="font-bold text-base text-[#005046]">
+                Informasi Pelayanan Paspor Republik Indonesia
+            </button>
+            <div class="flex gap-4">
+                <img src="./img/Appstore.png" alt="">
+                <img src="./img/playstore.png" alt="">
+            </div>
+        </div>
+    </section>
+
+
+<div class=" container mx-auto grid grid-cols-2 lg:grid-cols-4 gap-6 pt-10 pl-10">
+  <div class="flex flex-col gap-4">
+    <img src="./img/s21.png" alt="" class="">
+    <div class="w-full md:w-3/4 flex flex-col gap-3">
+      <p class="text-lg md:text-2xl font-bold">Lorem Ipsum Lorem Ipsum Lorem Ipsum</p>
+      <p class="text-gray-300">September 14, 2023</p>
+      <p class="text-gray-400">Jumat, 27 Agustus 2021. Bea Cukai Sangatta Melaksana...</p>
+    </div>
+  </div>
+  <div class="flex flex-col gap-4">
+    <img src="./img/s22.png" alt="" class="">
+    <div class="w-full md:w-3/4 flex flex-col gap-3">
+      <p class="text-lg md:text-2xl font-bold">Lorem Ipsum Lorem Ipsum Lorem Ipsum</p>
+      <p class="text-gray-300">September 14, 2023</p>
+      <p class="text-gray-400">Jumat, 27 Agustus 2021. Bea Cukai Sangatta Melaksana...</p>
+    </div>
+  </div>
+  <div class="flex flex-col gap-4">
+    <img src="./img/s21.png" alt="" class="">
+    <div class="w-full md:w-3/4 flex flex-col gap-3">
+      <p class="text-lg md:text-2xl font-bold">Lorem Ipsum Lorem Ipsum Lorem Ipsum</p>
+      <p class="text-gray-300">September 14, 2023</p>
+      <p class="text-gray-400">Jumat, 27 Agustus 2021. Bea Cukai Sangatta Melaksana...</p>
+    </div>
+  </div>
+  <div class="flex flex-col gap-4">
+    <img src="./img/s21.png" alt="" class="">
+    <div class="w-full md:w-3/4 flex flex-col gap-3">
+      <p class="text-lg md:text-2xl font-bold">Lorem Ipsum Lorem Ipsum Lorem Ipsum</p>
+      <p class="text-gray-300">September 14, 2023</p>
+      <p class="text-gray-400">Jumat, 27 Agustus 2021. Bea Cukai Sangatta Melaksana...</p>
+    </div>
+  </div>
+</div>
+
+<div class="flex flex-wrap justify-center">
+  <div class="flex flex-col gap-2 max-w-md">
+      <img src="./img/g1.png" alt="" class="">
+      <p class="text-xl font-bold w-4/5">Lorem Ipsum Lorem Ipsum Lorem Ipsum</p>
+      <p class="text-gray-300">September 14, 2023</p>
+      <p class="text-gray-400 w-4/5">Jumat, 27 Agustus 2021. Bea Cukai Sangatta melaksana...</p>
+  </div>
+  <div class="flex flex-col gap-2 max-w-md">
+      <img src="./img/g2.png" alt="" class="">
+      <p class="text-xl font-bold w-4/5">Lorem Ipsum Lorem Ipsum Lorem Ipsum</p>
+      <p class="text-gray-300">September 14, 2023</p>
+      <p class="text-gray-400 w-4/5">Jumat, 27 Agustus 2021. Bea Cukai Sangatta melaksana...</p>
+  </div>
+  <div class="flex flex-col gap-2 max-w-md">
+      <img src="./img/g3.png" alt="" class="">
+      <p class="text-xl font-bold w-4/5">Lorem Ipsum Lorem Ipsum Lorem Ipsum</p>
+      <p class="text-gray-300">September 14, 2023</p>
+      <p class="text-gray-400 w-4/5">Jumat, 27 Agustus 2021. Bea Cukai Sangatta melaksana...</p>
+  </div>
+  <div class="flex flex-col gap-2 max-w-md">
+      <img src="./img/g4.png" alt="" class="">
+      <p class="text-xl font-bold w-4/5">Lorem Ipsum Lorem Ipsum Lorem Ipsum</p>
+      <p class="text-gray-300">September 14, 2023</p>
+      <p class="text-gray-400 w-4/5">Jumat, 27 Agustus 2021. Bea Cukai Sangatta melaksana...</p>
+  </div>
+</div>
+
+<section class="container mx-auto flex flex-col gap-6 pt-24 px-4 sm:px-0">
+  <div class="flex flex-col items-center gap-4">
+    <p class="font-bold text-3xl text-center">Our Gallery and Social Media</p>
+    <p class="text-center">Prebör domisaning. Kemkastrering. Fagt kaskade. Bist decissa</p>
+  </div>
+  <div class="flex flex-col sm:flex-row gap-6">
+    <div class="grid grid-cols-2 gap-6 sm:w-7/12">
+      <img src="./img/m1.png" alt="" class="w-full">
+      <img src="./img/m2.png" alt="" class="w-full">
+      <img src="./img/m3.png" alt="" class="w-full">
+      <img src="./img/m4.png" alt="" class="w-full">
+    </div>
+    <div class="relative sm:w-5/12">
+      <img src="./img/m5.png" alt="" class="w-full">
+      <img src="./img/m5.2.png" alt="" class="absolute top-4 px-4 sm:top-6 sm:left-6 md:top-8 md:left-8">
+      <img src="./img/m5.3.png" alt="" class="absolute top-20 px-11 sm:top-28 sm:left-28 md:top-36 md:left-36">
+    </div>
+  </div>
+  <div class="flex justify-center items-center pt-4">
+    <button type="button" class="bg-[#005046] rounded-xl py-4 px-6 text-white hover:bg-green-800">View More</button>
+  </div>
+</section>
+
+
+<script>
+  function Menu(e){
+    let list = document.querySelector('ul');
+    e.name === 'menu' ? (e.name = "close",list.classList.add('top-[80px]') , list.classList.add('opacity-100')) :( e.name = "menu" ,list.classList.remove('top-[80px]'),list.classList.remove('opacity-100'))
+  }
+</script>    
+    
+</body>
+</html>

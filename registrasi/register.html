@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+          theme: {
+            container: {
+                center: true,
+                padding: {
+                    DEFAULT: '1rem',
+                    sm: '2rem',
+                    lg: '4rem',
+                    xl: '5rem',
+                    '2xl': '6rem',
+                },
+            },
+            extend: {
+              colors: {
+                clifford: '#da373d',
+              }
+            }
+          }
+        }
+      </script>
+    <title>Document</title>
+</head>
+<body>
+    <!-- Header -->
+    <section class="py-3">
+        <div class="container mx-auto flex justify-between ">
+            <div class="flex items-center justify-center gap-2.5 ">
+                <img class="" src="./img/image1.png" alt="">
+                <div class="gap-1">
+                    <h1 class=" font-bold">
+                        Kantor imigrasi Kelas XXX (edit)
+                    </h1>
+                    <hr class="border-black">
+                    <p>
+                        Kantor Wilayah Kemenkumham Nama <br> Provinsi (edit)
+                    </p>
+                </div>
+            </div>
+            <div class="flex gap-4 py-7">
+                <a href="http://" target="_blank" rel="noopener noreferrer"><img src="./img/instagram.png" alt=""></a>
+                <a href="http://" target="_blank" rel="noopener noreferrer"><img src="./img/wa.png" alt=""></a>
+                <a href="http://" target="_blank" rel="noopener noreferrer"><img src="./img/youtube.png" alt=""></a>
+                <a href="http://" target="_blank" rel="noopener noreferrer"><img src="./img/linkedin.png" alt=""></a>
+                <a href="http://" target="_blank" rel="noopener noreferrer"><img src="./img/twiter.png" alt=""></a>
+            </div>
+        </div>
+    </section>
+    <hr class="border-gray-300">
+    <!-- Header end -->
+    
+    <!-- Nav -->
+    <section>
+        <div class=" container mx-auto flex justify-between  ">
+            <nav class="  ">
+                <ul class=" flex gap-8 py-8 text-gray-400 fontFamily-[inter] text-xl  ">
+                    <li><a href="" class="hover:text-[#005046] hover:font-bold">Profile</a>
+                    </li>
+                    <li><a href="" class="hover:text-[#005046] hover:font-bold">Regulasi</a>
+                    </li>
+                    <li><a href="" class="hover:text-[#005046] hover:font-bold">Publikasi</a>               
+                    </li>
+                    <li><a href="" class="hover:text-[#005046] hover:font-bold">Informasi Publik</a>               
+                    </li>
+                    <li><a href="" class="hover:text-[#005046] hover:font-bold">Prosedur Pelayanan</a>              
+                    </li>
+                    <li><a href="" class="hover:text-[#005046] hover:font-bold">Pengaduan</a>               
+                    </li>
+                    <li><a href="" class="hover:text-[#005046] hover:font-bold">Galery</a>               
+                    </li>
+                    <li><a href="" class="hover:text-[#005046] hover:font-bold">News</a>              
+                    </li>
+                    <li><a href="" class="hover:text-[#005046] hover:font-bold">Kontak Kami</a>             
+                     
+                </ul>
+            </nav>
+            <div class="flex flex-row justify-between items-center gap-4 py-6 px-2 ">
+                <button type="button" class="flex">
+                    <img src="./img/Group23.png" alt=""></button>
+                <button type="button" class="bg-[#005046] rounded-xl order-1 py-4 px-8 text-white hover:bg-green-800">Register</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="container bg-gray-50 h-60 py-16">
+        <p class=" font-bold text-3xl   ">
+            Register Member
+        </p>
+        <p class=" text-gray-400 pt-6 ">
+            Prebör domisaning. Kemkastrering. Fagt kaskade. Bist decissa. Stereodiktisk vasyns att preteng.
+        </p>
+    </section>
+
+
+    <section class="container pt-20 pb-60 ">
+        <div class="card mx-auto rounded-lg border-2 w-[65%]">
+            <div class="card-content px-[64px] py-[60px] flex flex-col justify-center gap-10 items-center">
+                <h1 class="font-bold text-3xl order-0">
+                    Register
+                </h1>
+                <p class="w-4/5 text-center order-1">
+                    In registering there are users, super users, central members, branch members, there are advantages for each member list
+                </p>
+                <div class="grid grid-cols-2 gap-6 order-2 w-full">
+                    <div class="flex flex-col justify-center gap-6">
+                        <div class="flex flex-col gap-3">
+                            <label for="" class="font-bold text-lg">First Name</label> 
+                            <input type="text" class="px-4 py-3 border-2 rounded-lg" placeholder="Your Name">
+                        </div>
+                        <div class="flex flex-col gap-3">
+                            <label for="" class="font-bold text-lg">Email</label> 
+                            <input type="email" class="px-4 py-3 border-2 rounded-lg " placeholder="Email" >
+                        </div>
+                        <div class="flex flex-col gap-3  ">
+                            <label for="" class="font-bold text-lg">Password</label> 
+                            <input type="password" class="px-4 py-3 border-2 rounded-lg " placeholder="Password" >
+                        </div>
+                        <div class="">
+                            <input type="checkbox" class="bg-gray-400">
+                            <label for="" class="text-lg">Remember Password</label>
+                        </div>
+                    </div>
+          
+
+                    <div class="flex flex-col justify-center gap-6">
+                        <div class="flex flex-col gap-3">
+                            <label for="" class="font-bold text-lg">Last Name</label> 
+                            <input type="text" class="px-4 py-3 border-2 rounded-lg" placeholder="Last Name">
+                        </div>
+                        <div class="flex flex-col gap-3">
+                            <label for="" class="font-bold text-lg">No. Telp</label> 
+                            <input type="email" class="px-4 py-3 border-2 rounded-lg " placeholder="+62" >
+                        </div>
+                        <div class="flex flex-col gap-3">
+                            <label for="" class="font-bold text-lg">Retype Password</label> 
+                            <input type="password" class="px-4 py-3 border-2 rounded-lg " placeholder="Password" >
+                        </div>
+                        <a href="#" class="text-right">Forget Password?</a>
+                    </div>   
+                </div>
+                <button type="submit" class="bg-[#005046] rounded-xl order-1 py-4 w-full text-white text-xl hover:bg-green-800 order-3">Registrasi</button>
+
+                <p class=" order-4">Do you have account ? <button type="button" class="text-[#005046]  font-semibold ">Login</button></p>
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-[#00221E] py-20">
+        <div class="container mx-auto text-white ">
+            <div class="grid lg:grid-cols-8 grid-cols-3">
+                <div class="lg:col-span-3 col-span-5 sm:pb-5 ">
+                    <a href="/">
+                        <div class="flex gap-4">
+                        <img src="./img/image1.png" alt="" class="w-1/6">
+                        <div class="">
+                            <h1 class="font-semibold">Kantor imigrasi Kelas XXX (edit)</h1>
+                            <hr>
+                            <p class="">Kantor Wilayah Kemenkumham Nama Provinsi (edit)</p>
+
+                        </div>
+                        </div>
+                        <p class="text-base pt-10 ">Prebör domisaning. Kemkastrering. Fagt kaskade. Bist decissa. Stereodiktisk vasyns att preteng. Mons byning fihör. Pore tolig. Epire kanesk. Monosa medelgam tisk.</p>
+                        <ul class="flex mt-10 gap-5 justify-center md:justify-start ">
+                            <li><img src="./img/instagram.png" alt=""></li>
+                            <li><img src="./img/wa.png" alt=""></li>
+                            <li><img src="./img/youtube.png" alt=""></li>
+                            <li><img src="./img/linkedin.png" alt=""></li>
+                            <li><img src="./img/twiter.png" alt=""></li>
+                        </ul>
+                    </a>
+
+                </div>
+                <div class="sm:col-span-1 col-span-2 ">
+                    <h1 class="font-semibold">
+                        Home
+                    </h1>
+                    <ul class="flex flex-col gap-6 mt-6 space-y-1">
+                        <li><a href="" class="hover:text-green-200">Beranda</a></li>
+                        <li><a href="" class="hover:text-green-200">Layanan Keimigrasian</a></li>
+                        <li><a href="" class="hover:text-green-200">Gallery</a></li>
+                        <li><a href="" class="hover:text-green-200">Our News</a></li>
+                    </ul>
+                </div>
+
+                <div class="sm:col-span-2 col-span-3 ">
+                    <h1 class="font-semibold">
+                        Contact
+                    </h1>
+                    <ul class="flex flex-col gap-6 mt-6 space-y-1">
+                        <li><a href=""><img src="./img/co1.png" alt="" class="float-left mr-2 py-1"> (406) 555-0120</a></li>
+                        <li><a href="" class="hover:text-green-200"><img src="./img/co2.png" alt="" class="float-left mr-2 py-1"> Imigrasisukabumi123@gmail.com</a></li>
+                        <li><a href=""><img src="./img/co3.png" alt="" class="float-left mr-2 py-1">2972 Westheimer Rd. Santa Ana, Illinois 85486 </a></li>
+                    </ul>
+                </div>
+
+                <div class="sm:col-span-2 col-span-4 ">
+                    <h1 class="font-semibold">
+                        Maps Location
+                    </h1>
+                    <ul class="flex flex-col gap-6 mt-6 space-y-1">
+                        <li><a href=""><img src="./img/maps.png" alt="" class=""></a></li>
+                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="container mx-auto mt-12 ">
+            <p class="text-white grid justify-end">
+                © 2022 Mangcoding. All rights reserved.
+            </p>
+        </div>
+    </section>
+    
+</body>
+</html>

@@ -1,0 +1,650 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+          theme: {
+            container: {
+                center: true,
+                padding: {
+                    DEFAULT: '1rem',
+                    sm: '2rem',
+                    lg: '4rem',
+                    xl: '5rem',
+                    '2xl': '6rem',
+                },
+            },
+            extend: {
+              colors: {
+                clifford: '#da373d',
+              }
+            }
+          }
+        }
+      </script>
+    <title>Imigrasi</title>
+    
+
+</head>
+<body>
+
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script>
+        export default {
+            data() {
+            return {
+                open: false,
+            }
+            }
+        }
+    </script>
+    <style>
+        *{
+          padding: 0%;
+          margin: 0%;
+        font-family: 'Inter', ;
+        }
+      </style>
+
+
+    <!-- Header -->
+    <section class="py-3">
+        <div class="container mx-auto flex justify-between ">
+            <div class="flex items-center justify-center gap-2.5 ">
+                <img class="" src="./img/image1.png" alt="" class="w-[65px] h-[33px] " >
+                <div class="gap-1">
+                    <h1 class=" font-bold text-[11px]">
+                        Kantor imigrasi Kelas XXX (edit)
+                    </h1>
+                    <hr class="border-black">
+                    <p class="text-[11px]">
+                        Kantor Wilayah Kemenkumham Nama <br> Provinsi (edit)
+                    </p>
+                </div>
+            </div>
+            <div class="flex gap-4 py-7">
+                <a href="http://" target="_blank" rel="noopener noreferrer"><img src="./img/instagram.png" alt=""></a>
+                <a href="http://" target="_blank" rel="noopener noreferrer"><img src="./img/wa.png" alt=""></a>
+                <a href="http://" target="_blank" rel="noopener noreferrer"><img src="./img/youtube.png" alt=""></a>
+                <a href="http://" target="_blank" rel="noopener noreferrer"><img src="./img/linkedin.png" alt=""></a>
+                <a href="http://" target="_blank" rel="noopener noreferrer"><img src="./img/twiter.png" alt=""></a>
+            </div>
+        </div>
+    </section>
+    <hr class="border-gray-300">
+    <!-- Header end -->
+    
+    <!-- Nav -->
+    <section>
+            <div class=" container mx-auto flex flex-wrap justify-between  ">
+                <div class="w-full lg:inline-flex lg:w-auto mt-2 lg:mt-0 ">
+                    <ul class=" flex flex-col lg:flex-row gap-8 py-10 text-gray-400 fontFamily-[inter] text-base  ">
+                        <li class="relative">
+                            <button id="dropdownDefaultButton" data-dropdown-toggle="dropdown" class=" text-sm text-center inline-flex items-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800" type="button">Profile <svg class="w-4 h-4 ml-2" aria-hidden="true" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg></button>
+                            <!-- Dropdown menu -->
+                            <div id="dropdown" class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700">
+                                <ul class="py-2 text-sm text-gray-700 dark:text-gray-200" aria-labelledby="dropdownDefaultButton">
+                                <li>
+                                    <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Sejarah Imigrasi</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Tugas Pokok dan Fungsi</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Visi Misi</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Organisasi</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Profile Pejabat</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Profile Pejabat</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Profile Pejabat</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Mars Imigrasi</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Makna Logo</a>
+                                </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="relative">
+                            <button id="dropdownDefaultButton" data-dropdown-toggle="dropdown1" class=" text-sm text-center inline-flex items-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800" type="button">Regulasi <svg class="w-4 h-4 ml-2" aria-hidden="true" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg></button>
+                            <!-- Dropdown menu -->
+                            <div id="dropdown1" class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700">
+                                <ul class="py-2 text-sm text-gray-700 dark:text-gray-200" aria-labelledby="dropdownDefaultButton">
+                                <li>
+                                    <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Undang-Undang</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Peraturan Menteri</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Peraturan Pemerintah</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Keputusan Menteri</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Surat Edaran Irjen</a>
+                                </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="relative">
+                            <button id="dropdownDefaultButton" data-dropdown-toggle="dropdown" class=" text-sm text-center inline-flex items-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800" type="button">Profile <svg class="w-4 h-4 ml-2" aria-hidden="true" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg></button>
+                            <!-- Dropdown menu -->
+                            <div id="dropdown" class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700">
+                                <ul class="py-2 text-sm text-gray-700 dark:text-gray-200" aria-labelledby="dropdownDefaultButton">
+                                <li>
+                                    <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Sejarah Imigrasi</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Tugas Pokok dan Fungsi</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Visi Misi</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Organisasi</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Profile Pejabat</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Profile Pejabat</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Profile Pejabat</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Mars Imigrasi</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Makna Logo</a>
+                                </li>
+                                </ul>
+                            </div>
+                        </li>
+
+                        <li>
+                            <a href="" class="hover:text-[#005046] text-sm flex gap-3">Regulasi <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-5 h-5">
+                            <path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z" clip-rule="evenodd" />
+                            </svg>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="" class="hover:text-[#005046] text-sm flex gap-3">Publikasi <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-5 h-5">
+                            <path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z" clip-rule="evenodd" />
+                            </svg>
+                            </a>               
+                        </li>
+
+                        <li>
+                            <a href="" class="hover:text-[#005046] text-sm flex gap-3">Informasi Publik <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-5 h-5">
+                            <path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z" clip-rule="evenodd" />
+                            </svg>
+                            </a>               
+                        </li>
+
+                        <li>
+                            <a href="" class="hover:text-[#005046] text-sm flex gap-3">Prosedur Pelayanan <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-5 h-5">
+                            <path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z" clip-rule="evenodd" />
+                            </svg>
+                            </a>              
+                        </li>
+
+                        <li>
+                            <a href="" class="hover:text-[#005046] text-sm flex gap-3">Pengaduan <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-5 h-5">
+                            <path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z" clip-rule="evenodd" />
+                            </svg>
+                            </a>               
+                        </li>
+
+                        <li>
+                            <a href="" class="hover:text-[#005046] text-sm">Galery</a>               
+                        </li>
+
+                        <li>
+                            <a href="" class="hover:text-[#005046] text-sm">News</a>              
+                        </li>
+
+                        <li>
+                            <a href="" class="hover:text-[#005046] text-sm">Kontak Kami</a>             
+                        </li>
+                    </ul>
+                </div>
+            
+                <div class="flex flex-row justify-between items-center gap-4 py-6  ">
+                    <button type="button" class="flex">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z" />
+                        </svg>
+                    </button>
+                    <button type="button" class="bg-[#005046] text-sm rounded-xl order-1 py-4 px-6 text-white hover:bg-green-800">Registrasi</button>
+                </div>
+            </div>
+        </nav>
+    </section>
+
+    
+<div id="default-carousel" class="relative w-full" data-carousel="slide">
+    <!-- Carousel wrapper -->
+    <div class="relative  overflow-hidden rounded-lg md:h-96">
+         <!-- Item 1 -->
+        <div class="hidden duration-700 ease-in-out" data-carousel-item>
+            <section class=" flex flex-col bg-gradient-to-b from-[#F9BC3F] to-[#407A77] items-center">
+                <div class="container mx-auto flex justify-between">
+                    <div class="flex flex-col gap-10 py-32 ">
+                        <div class=" flex flex-col gap-10">
+                            <div class="flex flex-col gap-4">
+                                <p class="text-white">Lorem Ipsum</p>
+                                <p class="text-5xl font-bold text-white">Prebör domisaning. Kemkastrering. Fagt kaskade. Bist decissa.</p>
+                            </div>
+                            <p class="text-white">Prebör domisaning. Kemkastrering. Fagt kaskade. Bist decissa. Stereodiktisk vasyns att preteng. 
+                            Mons byning fihör. Pore tolig. Epire kanesk. Monosa medelgam tisk.</p>
+                        </div>
+                        <div class="flex gap-6">
+                            <img src="./img/Appstore.png" alt="">
+                            <img src="./img/playstore.png" alt="">
+                        </div>
+                    </div>
+                    <img src="./img/image3.png" alt="">
+                </div>
+                <svg xmlns="http://www.w3.org/2000/svg"  fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-8 h-8 text-white ">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M6.75 12a.75.75 0 11-1.5 0 .75.75 0 011.5 0zM12.75 12a.75.75 0 11-1.5 0 .75.75 0 011.5 0zM18.75 12a.75.75 0 11-1.5 0 .75.75 0 011.5 0z" />
+                  </svg>
+            </section>
+        </div>
+        <!-- Item 2 -->
+        <div class="hidden duration-700 ease-in-out" data-carousel-item>
+            <img src="/docs/images/carousel/carousel-2.svg" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+        </div>
+        <!-- Item 3 -->
+        <div class="hidden duration-700 ease-in-out" data-carousel-item>
+            <img src="/docs/images/carousel/carousel-3.svg" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+        </div>
+       
+    </div>
+    <!-- Slider indicators -->
+    <div class="absolute z-30 flex space-x-3 -translate-x-1/2 bottom-5 left-1/2">
+        <button type="button" class="w-2 h-2 rounded-full" aria-current="true" aria-label="Slide 1" data-carousel-slide-to="0"></button>
+        <button type="button" class="w-2 h-2 rounded-full" aria-current="false" aria-label="Slide 2" data-carousel-slide-to="1"></button>
+        <button type="button" class="w-2 h-2 rounded-full" aria-current="false" aria-label="Slide 3" data-carousel-slide-to="2"></button>
+        
+    </div>
+    <!-- Slider controls -->
+    <button type="button" class="absolute top-0 left-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-prev>
+        <span class="inline-flex items-center justify-center w-8 h-8 rounded-full sm:w-10 sm:h-10 bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+            <svg aria-hidden="true" class="w-5 h-5 text-white sm:w-6 sm:h-6 dark:text-gray-800" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path></svg>
+            <span class="sr-only">Previous</span>
+        </span>
+    </button>
+    <button type="button" class="absolute top-0 right-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-next>
+        <span class="inline-flex items-center justify-center w-8 h-8 rounded-full sm:w-10 sm:h-10 bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+            <svg aria-hidden="true" class="w-5 h-5 text-white sm:w-6 sm:h-6 dark:text-gray-800" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+            <span class="sr-only">Next</span>
+        </span>
+    </button>
+</div>
+
+      
+    
+
+    <!-- Layanan -->
+    <div class="">
+        <section class=" py-8 px-4 sm:px-6 lg:px-8 flex flex-col items-center gap-6">
+            <img src="./img/Logolayanan.png" alt="" class="w-28 h-28 md:w-36 md:h-36 lg:w-44 lg:h-44 order-0">
+            <div class=" md:w-4/5 lg:w-3/4 flex flex-col items-center gap-10 order-1">
+            <div class=" md:w-3/4 lg:w-2/3 flex flex-col items-center gap-3">
+                <h2 class="not-italic font-bold text-2xl text-[#1A1A1A]">
+                Layanan Keimigrasian
+                </h2>
+                <p class="font-normal text-base text-[#969696] text-center">
+                Beberapa Layanan yang kami sediakan untuk kalian semua lorem ipsum lorem ipsum lorem ipsuum
+                </p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <button type="button" class="bg-white drop-shadow-md rounded-lg px-4 py-6 text-left w-full">
+                <img src="./img/exp1.png" alt="" class="w-10 h-10 md:w-12 md:h-12 lg:w-14 lg:h-14">
+                <h2 class="font-bold text-lg text-black pt-6">
+                    Layanan Visa Online
+                </h2>
+                <p class="font-normal text-gray-600 text-base pt-4">
+                    Berisi seluruh informasi mengenai prosedur permohonan visa online lengkap dengan persyaratannya dan informasi tentang jenis visa tersebut
+                </p>
+                <p class="font-bold text-[#005046] text-base pt-4">
+                    More Information
+                </p>
+                </button>
+                <button type="button" class="bg-white drop-shadow-md rounded-lg px-4 py-6 text-left w-full">
+                <img src="./img/exp2.png" alt="" class="w-10 h-10 md:w-12 md:h-12 lg:w-14 lg:h-14">
+                <h2 class="font-bold text-lg text-black pt-6">
+                    Layanan E-SRPI
+                </h2>
+                <p class="font-normal text-gray-600 text-base pt-4">
+                    Layanan untuk membantu masyarakat Indonesia mendapatkan Surat Rekomendasi Pemerintah Indonesia yang ditujukan ke Kedutaan Besar Australia untuk mengajukan Visa Australia tipe "Work and Holiday".
+                </p>
+                <p class="font-bold text-[#005046] text-base pt-4">
+                    More Information
+                </p>
+                </button>
+                <button type="button" class="bg-white drop-shadow-md rounded-lg px-4 py-6 text-left w-full">
+                <img src="./img/exp3.png" alt="" class="w-10 h-10 md:w-12 md:h-12 lg:w-14 lg:h-14">
+                <h2 class="font-bold text-lg text-black pt-6">
+                    Layanan APQA
+                </h2>
+                <p class="font-normal text-gray-600 text-base pt-4">
+                    Layanan untuk Pelaporan dari setiap Penjamin (sponsor) dan Pemilik/Pengurus tempat penginapan yang memberikan kesempatan menginap bagi Orang Asing kepada Kantor Imigrasi setempat.
+                </p>
+                <p class="font-bold text-[#005046] text-base pt-4">
+                More Information
+                </p>
+                </button>
+                <button type="button" class="bg-white drop-shadow-md rounded-lg px-4 py-6 text-left w-full">
+                <img src="./img/exp3.png" alt="" class="w-10 h-10 md:w-12 md:h-12 lg:w-14 lg:h-14">
+                <h2 class="font-bold text-lg text-black pt-6">
+                    Whistle Blowing System
+                </h2>
+                <p class="font-normal text-gray-600 text-base pt-4">
+                    Layanan pelaporan pelanggaran di Lingkungan Kementerian Hukum dan HAM RI (UPT/Kanwil)
+                </p>
+                <p class="font-bold text-[#005046] text-base pt-4">
+                More Information
+                </p>
+                </button>
+                <button type="button" class="bg-white drop-shadow-md rounded-lg px-4 py-6 text-left w-full">
+                <img src="./img/exp3.png" alt="" class="w-10 h-10 md:w-12 md:h-12 lg:w-14 lg:h-14">
+                <h2 class="font-bold text-lg text-black pt-6">
+                    Layanan Izin Tinggal
+                </h2>
+                <p class="font-normal text-gray-600 text-base pt-4">
+                    Aplikasi berbasis web yang bertujuan untuk memberikan layanan Izin Tinggal Keimigrasian secara online kepada pemohon Izin Tinggal Keimigrasian.
+                </p>
+                <p class="font-bold text-[#005046] text-base pt-4">
+                More Information
+                </p>
+                </button>
+                <button type="button" class="bg-white drop-shadow-md rounded-lg px-4 py-6 text-left w-full">
+                <img src="./img/exp3.png" alt="" class="w-10 h-10 md:w-12 md:h-12 lg:w-14 lg:h-14">
+                <h2 class="font-bold text-lg text-black pt-6">
+                    Aplikasi Lapor
+                </h2>
+                <p class="font-normal text-gray-600 text-base pt-4">
+                    Layanan penyampaian semua aspirasi dan pengaduan masyarakat Indonesia melalui beberapa kanal pengaduan yaitu website www.lapor.go.id, SMS 1708 (Telkomsel, Indosat, Three), Twitter @lapor1708 serta aplikasi mobile.
+                </p>
+                <p class="font-bold text-[#005046] text-base pt-4">
+                More Information
+                </p>
+                </button>
+            </div>
+        </div>
+        </section>
+    </div>
+
+
+    <!-- Paspor -->
+    <section class=" container mx-auto flex flex-col md:flex-row items-center py-8 md:py-12 px-4 md:px-28 w-full md:h-[592px] bg-[#F2F6F6] gap-6">
+        <img src="./img/pas1.png" alt="" class="w-full md:w-[608px] h-[512px] md:order-0">
+        <div class="flex flex-col items-start gap-4 md:w-[608px] h-[320px] md:order-1">
+            <p class="text-base font-normal text-[#005046]">
+                Application
+            </p>
+            <p class="font-bold text-black text-2xl">
+                Layanan Paspor
+            </p>
+            <p class="text-base font-normal text-[#969696]">
+                Prebör domisaning. Kemkastrering. Fagt kaskade. Bist decissa. Stereodiktisk vasyns att preteng. Mons byning fihör. Pore tolig.
+            </p>
+            <button type="button" class="font-bold text-base text-[#005046]">
+                Informasi Pelayanan Paspor Republik Indonesia
+            </button>
+            <button type="button" class="font-bold text-base text-[#005046]">
+                Informasi Pelayanan Paspor Republik Indonesia
+            </button>
+            <div class="flex gap-4">
+                <img src="./img/Appstore.png" alt="">
+                <img src="./img/playstore.png" alt="">
+            </div>
+        </div>
+    </section>
+
+    <!-- News -->
+    <section class="container mx-auto flex flex-col items-center gap-8 py-20 px-28 ">
+        <div class="flex flex-col gap-6 items-center">
+            <h2 class=" font-bold text-3xl  text-black order-0 ">
+                Our News
+            </h2>
+            <p class=" text-base font-normal text-[#969696] order-1 ">
+                Prebör domisaning. Kemkastrering. Fagt kaskade. Bist decissa
+            </p>
+        </div>
+        <div class=" flex flex-col items-start gap-6 order-1 ">
+            <div class=" flex flex-row items-start gap-8 w-[1240px] h-[476px] order-0 ">
+                <div class="relative">
+                    <div class=" absolute flex flex-col items-start gap-3 py-10 top-[3000px] left- text-white  ">
+                        <button type="button" class=" font-bold text-2xl " >
+                            Lorem Ipsum Lorem Ipsum Lorem Ipsum
+                        </button>
+                        <p>
+                            September 16, 2023
+                        </p>
+                        <div class=" max-w-xl ">
+                            Prebör domisaning. Kemkastrering. Fagt kaskade. Bist decissa. Stereodiktisk vasyns att preteng. Mons byning fihör. Pore tolig. 
+                        </div>
+                    </div>
+                    <img src="./img/Frame.png" alt="" class="w-full">
+
+                </div>
+                <div class="container flex flex-col items-start gap-2 w-[495px] h-[453px] order-1 not-italic fontFamily-[inter] py-3 ">
+                    <h2 class=" font-bold text-2xl text-black order-0 ">
+                        Lates News
+                    </h2>
+                <div class=" w-[495px] items-start   ">
+                    <div class=" py-3 ">
+                        <button type="button" class="text-left font-bold text-xl  w-[270px] ">
+                            Lorem Ipsum Lorem Ipsum Lorem Ipsum
+                        </button>
+                        <p class=" text-base text-[#969696]  ">
+                            Prebör domisaning. Kemkastrering. Fagt kaskade. Bist decissa. Stereodiktisk vasyns att preteng. Mons byning fihör. Pore tolig. 
+                        </p>
+                    </div>
+                    <div class=" py-3">
+                        <button type="button" class="text-left font-bold text-xl  w-[270px] ">
+                            Lorem Ipsum Lorem Ipsum Lorem Ipsum
+                        </button>
+                        <p class=" text-base text-[#969696]  ">
+                            Prebör domisaning. Kemkastrering. Fagt kaskade. Bist decissa. Stereodiktisk vasyns att preteng. Mons byning fihör. Pore tolig. 
+                        </p>
+                    </div>
+                    <div class="py-3 ">
+                        <button type="button" class="text-left font-bold text-xl  w-[270px] ">
+                            Lorem Ipsum Lorem Ipsum Lorem Ipsum
+                        </button>
+                        <p class=" text-base text-[#969696]  ">
+                            Prebör domisaning. Kemkastrering. Fagt kaskade. Bist decissa. Stereodiktisk vasyns att preteng. Mons byning fihör. Pore tolig. 
+                        </p>
+                    </div>
+                </div>
+                </div>
+            </div>
+            <div class="container grid grid-cols-4 items-start gap-6 max-w7xl max-h-96 order-1 fontFamily-[inter] ">
+                <button type="button" class=" w-80 h-86 px-0 text-left ">
+                    <img src="./img/g1.png" alt="">
+                    <p class=" text-lg font-bold ">
+                        Lorem Ipsum Lorem Ipsum Lorem Ipsum
+                    </p>
+                    <p class="text-base font-normal text-[#646464]">
+                        September 14, 2023
+                    </p>
+                    <p class="text-base font-normal text-[#646464] w-[282px]">
+                        Jumat, 27 Agustus 2021. Bea Cukai Sangatta melaksana...
+                    </p>
+                </button>
+                <button type="button" class="w-80 h-86 px-0 text-left">
+                    <img src="./img/g2.png" alt="">
+                    <p class=" text-lg font-bold ">
+                        Lorem Ipsum Lorem Ipsum Lorem Ipsum
+                    </p>
+                    <p class="text-base font-normal text-[#646464]">
+                        September 14, 2023
+                    </p>
+                    <p class="text-base font-normal text-[#646464] w-[282px]">
+                        Jumat, 27 Agustus 2021. Bea Cukai Sangatta melaksana...
+                    </p>
+                </button>
+                <button type="button" class="w-80 h-86 px-0 text-left">
+                    <img src="./img/g3.png" alt="">
+                    <p class=" text-lg font-bold ">
+                        Lorem Ipsum Lorem Ipsum Lorem Ipsum
+                    </p>
+                    <p class="text-base font-normal text-[#646464]">
+                        September 14, 2023
+                    </p>
+                    <p class="text-base font-normal text-[#646464] w-[282px]">
+                        Jumat, 27 Agustus 2021. Bea Cukai Sangatta melaksana...
+                    </p>
+                </button>
+                <button type="button" class="w-80 h-86 px-0 text-left">
+                    <img src="./img/g4.png" alt="">
+                    <p class=" text-lg font-bold ">
+                        Lorem Ipsum Lorem Ipsum Lorem Ipsum
+                    </p>
+                    <p class="text-base font-normal text-[#646464]">
+                        September 14, 2023
+                    </p>
+                    <p class="text-base font-normal text-[#646464] w-[282px]">
+                        Jumat, 27 Agustus 2021. Bea Cukai Sangatta melaksana...
+                    </p>
+                </button>
+            </div>
+        </div>
+        <button type="button" class="flex items-center bg-[#005046] text-center justify-center  rounded-lg order-2 text-white py-4 px-8 ">View More</button>
+    </section>
+
+    <!-- Galery -->
+    <section class="flex flex-col items-center w-full h-[1000px] gap-8 py-20 px-28 ">
+        <div class=" w-[490px] fontFamily-[inter] gap-3 order-0 flex flex-col items-center  ">
+            <h1 class=" font-bold text-3xl order-0   ">
+                Our Gallery and Media Sosial
+            </h1>
+            <p class=" text-base font-normal order-1 text-[#969696] pt-6 ">
+                Prebör domisaning. Kemkastrering. Fagt kaskade. Bist decissa 
+            </p>
+        </div>
+        <div class="flex flex-row items-start gap-4 ">
+            <div class="grid grid-cols-2 gap-4 order-0 ">
+                <img src="./img/m1.png" alt="" class="w-[340px] ">
+                <img src="./img/m2.png" alt="" class="w-[340px] ">
+                <img src="./img/m3.png" alt="" class="w-[340px] ">
+                <img src="./img/m4.png" alt="" class="w-[340px] ">
+            </div>
+            <div>
+                <img src="./img/m5.png" alt="" class="w-[503px] ">
+                <img src="./img/m5.2.png" alt="" class=" w-[475px] absolute top-[3915px] right-[305px] ">
+                <img src="./img/m5.3.png" alt="" class="w-[102px] absolute top-[3970px] right-[650px] ">
+            </div>
+        </div>
+        <button type="button" class="flex items-center bg-[#005046] text-center justify-center  rounded-lg order-2 text-white py-4 px-8 ">View More</button>
+    </section>
+
+    <!-- footer -->
+    <section class=" mx-auto bg-[#00221E] flex flex-row gap-x-14 py-20 pl-80 ">
+        <div class=" flex flex-col text-white gap-6 pr-8">
+            <div class="flex items-center justify-center gap-2.5 ">
+                <img class="" src="./img/image1.png" alt="">
+                <div class="gap-1">
+                    <h1 class=" font-bold">
+                        Kantor imigrasi Kelas XXX (edit)
+                    </h1>
+                    <hr class="border-white">
+                    <p>
+                        Kantor Wilayah Kemenkumham Nama <br> Provinsi (edit)
+                    </p>
+                </div>
+            </div>
+
+            <p class=" font-normal text-base w-[350px] py-4 ">
+                Prebör domisaning. Kemkastrering. Fagt kaskade. Bist decissa. Stereodiktisk vasyns att preteng. Mons byning fihör. Pore tolig. Epire kanesk. Monosa medelgam tisk.
+            </p>
+            <div class="flex flex-row gap-4">
+                <a href="http://" target="_blank" rel="noopener noreferrer"><img src="./img/instagram.png" alt=""></a>
+                <a href="http://" target="_blank" rel="noopener noreferrer"><img src="./img/wa.png" alt=""></a>
+                <a href="http://" target="_blank" rel="noopener noreferrer"><img src="./img/youtube.png" alt=""></a>
+                <a href="http://" target="_blank" rel="noopener noreferrer"><img src="./img/linkedin.png" alt=""></a>
+                <a href="http://" target="_blank" rel="noopener noreferrer"><img src="./img/twiter.png" alt=""></a>
+            </div>
+        </div>
+
+        <div class="flex flex-col items-start gap-4 text-white fontFamily-[inter] ">
+            <button type="button">
+                <p class="font-bold">
+                    Home
+                </p>
+            </button>
+            <button type="button">
+                <p class="">
+                    Beranda
+                </p>
+            </button>
+            <button type="button">
+                <p class="">
+                    Layanan Keimigrasian
+                </p>
+            </button>
+            <button type="button">
+                <p class="">
+                    Gallery
+                </p>
+            </button>
+            <button type="button">
+                <p class="">
+                    Our News
+                </p>
+            </button>
+        </div>
+
+        <div class="flex flex-col gap-4 text-white  ">
+            <p class="font-bold">
+                Contact
+            </p>
+            <div class="">
+                <img src="./img/co1.png" alt="" class="float-left mr-4">
+                <p>(406) 555-0120</p>
+            </div>
+            <div class="">
+                <img src="./img/co2.png" alt="" class="float-left mr-4">
+                <p>Imigrasisukabumi123@gmail.com</p>
+            </div>
+            <div class="">
+                <img src="./img/co3.png" alt="" class="float-left mr-4">
+                <p>2972 Westheimer Rd. Santa Ana, Illinois 85486</p>
+            </div>
+
+        </div>
+
+        <div class="flex flex-col gap-4 ">
+            <p class=" font-bold text-white ">
+                Maps Location
+            </p>
+            <a href="http://" target="_blank" rel="noopener noreferrer"><img src="./img/maps.png" alt=""></a>
+        </div>
+        
+    </section>
+
+
+
+    <script src="https://unpkg.com/flowbite@1.5.4/dist/flowbite.js"></script>
+</body>
+</html>

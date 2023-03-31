@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+          theme: {
+            container: {
+                center: true,
+                padding: {
+                    DEFAULT: '1rem',
+                    sm: '2rem',
+                    lg: '4rem',
+                    xl: '5rem',
+                    '2xl': '6rem',
+                },
+            },
+            extend: {
+              colors: {
+                clifford: '#da373d',
+              }
+            }
+          }
+        }
+      </script>
+    <title>Document</title>
+</head>
+<body>
+    <!-- Header -->
+  <section class="py-3 ">
+    <div class="container mx-auto flex justify-between h-[73px] ">
+        <div class="flex items-center justify-center gap-2.5 ">
+            <img class="w-[65px] h-[33px]" src="./img/image1.png" alt="">
+            <div class="gap-1">
+                <h1 class=" font-bold text-[11px]">
+                    Kantor imigrasi Kelas XXX (edit)
+                </h1>
+                <hr class="border-black">
+                <p class="text-[11px]">
+                    Kantor Wilayah Kemenkumham <br> Nama Provinsi (edit)
+                </p>
+            </div>
+        </div>
+        <div class="flex gap-4 py-7">
+            <a href="http://" target="_blank" rel="noopener noreferrer"><svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M9.99908 6.64752C8.97712 6.64752 7.99701 7.0535 7.27437 7.77614C6.55173 8.49878 6.14575 9.47889 6.14575 10.5009C6.14575 11.5228 6.55173 12.5029 7.27437 13.2256C7.99701 13.9482 8.97712 14.3542 9.99908 14.3542C11.0211 14.3542 12.0012 13.9482 12.7238 13.2256C13.4464 12.5029 13.8524 11.5228 13.8524 10.5009C13.8524 9.47889 13.4464 8.49878 12.7238 7.77614C12.0012 7.0535 11.0211 6.64752 9.99908 6.64752V6.64752ZM9.99908 13.0034C9.33516 13.0034 8.69843 12.7396 8.22896 12.2701C7.7595 11.8007 7.49575 11.1639 7.49575 10.5C7.49575 9.8361 7.7595 9.19936 8.22896 8.7299C8.69843 8.26043 9.33516 7.99669 9.99908 7.99669C10.663 7.99669 11.2997 8.26043 11.7692 8.7299C12.2387 9.19936 12.5024 9.8361 12.5024 10.5C12.5024 11.1639 12.2387 11.8007 11.7692 12.2701C11.2997 12.7396 10.663 13.0034 9.99908 13.0034V13.0034Z" fill="#969696"/>
+                <path d="M14.0038 7.40409C14.4999 7.40409 14.9021 7.00189 14.9021 6.50575C14.9021 6.00962 14.4999 5.60742 14.0038 5.60742C13.5077 5.60742 13.1055 6.00962 13.1055 6.50575C13.1055 7.00189 13.5077 7.40409 14.0038 7.40409Z" fill="#969696"/>
+                <path d="M17.1123 5.59242C16.9194 5.09424 16.6246 4.64182 16.2468 4.26414C15.869 3.88645 15.4164 3.59182 14.9182 3.39909C14.3351 3.18022 13.7192 3.06187 13.0965 3.04909C12.294 3.01409 12.0398 3.00409 10.0048 3.00409C7.96984 3.00409 7.70901 3.00409 6.91317 3.04909C6.291 3.06122 5.67547 3.17959 5.09317 3.39909C4.59479 3.59159 4.14214 3.88615 3.76429 4.26386C3.38643 4.64158 3.0917 5.09411 2.89901 5.59242C2.68009 6.17543 2.56202 6.79145 2.54984 7.41409C2.51401 8.21576 2.50317 8.46992 2.50317 10.5058C2.50317 12.5408 2.50317 12.7999 2.54984 13.5974C2.56234 14.2208 2.67984 14.8358 2.89901 15.4199C3.09224 15.9181 3.38725 16.3704 3.7652 16.7481C4.14315 17.1257 4.59573 17.4204 5.09401 17.6133C5.6752 17.8409 6.29098 17.9677 6.91484 17.9883C7.71734 18.0233 7.97151 18.0341 10.0065 18.0341C12.0415 18.0341 12.3023 18.0341 13.0982 17.9883C13.7208 17.9756 14.3367 17.8575 14.9198 17.6391C15.418 17.4459 15.8704 17.151 16.2481 16.7732C16.6259 16.3954 16.9208 15.9431 17.114 15.4449C17.3332 14.8616 17.4507 14.2466 17.4632 13.6233C17.499 12.8216 17.5098 12.5674 17.5098 10.5316C17.5098 8.49576 17.5098 8.23742 17.4632 7.43992C17.4535 6.80848 17.3348 6.18346 17.1123 5.59242V5.59242ZM16.0973 13.5358C16.092 14.016 16.0043 14.4918 15.8382 14.9424C15.713 15.2665 15.5214 15.5608 15.2757 15.8063C15.03 16.0519 14.7356 16.2433 14.4115 16.3683C13.9659 16.5336 13.4951 16.6213 13.0198 16.6274C12.2282 16.6641 12.0048 16.6733 9.97484 16.6733C7.94317 16.6733 7.73567 16.6733 6.92901 16.6274C6.45395 16.6216 5.98344 16.5339 5.53817 16.3683C5.21291 16.2441 4.91734 16.053 4.67058 15.8074C4.42382 15.5618 4.23137 15.2671 4.10567 14.9424C3.94188 14.4966 3.85427 14.0265 3.84651 13.5516C3.81067 12.7599 3.80234 12.5366 3.80234 10.5066C3.80234 8.47576 3.80234 8.26826 3.84651 7.46076C3.85189 6.98077 3.93955 6.50527 4.10567 6.05492C4.35984 5.39742 4.88067 4.87992 5.53817 4.62826C5.98367 4.46337 6.45403 4.37573 6.92901 4.36909C7.72151 4.33326 7.94401 4.32326 9.97484 4.32326C12.0057 4.32326 12.214 4.32326 13.0198 4.36909C13.4952 4.37481 13.966 4.46248 14.4115 4.62826C14.7356 4.75348 15.03 4.94509 15.2756 5.19078C15.5213 5.43647 15.7129 5.73082 15.8382 6.05492C16.002 6.50071 16.0896 6.97089 16.0973 7.44576C16.1332 8.23826 16.1423 8.46076 16.1423 10.4916C16.1423 12.5216 16.1423 12.7399 16.1065 13.5366H16.0973V13.5358Z" fill="#969696"/>
+                </svg>                    
+                </a>
+            <a href="http://" target="_blank" rel="noopener noreferrer"><svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g clip-path="url(#clip0_604_245)">
+                <g clip-path="url(#clip1_604_245)">
+                <path d="M15.1286 3.9317C13.6478 2.44733 11.6757 1.63092 9.57988 1.63092C5.25399 1.63092 1.7339 5.15101 1.7339 9.4769C1.7339 10.8588 2.09439 12.2089 2.78003 13.3999L1.66675 17.4643L5.82653 16.3722C6.97162 16.9977 8.26161 17.3264 9.57635 17.3264H9.57988C13.9022 17.3264 17.5001 13.8063 17.5001 9.48044C17.5001 7.38464 16.6095 5.41608 15.1286 3.9317ZM9.57988 16.0046C8.40652 16.0046 7.25789 15.6901 6.25771 15.0963L6.02091 14.955L3.55402 15.6017L4.21139 13.1949L4.05588 12.9475C3.40205 11.9085 3.05923 10.7103 3.05923 9.4769C3.05923 5.88259 5.98557 2.95626 9.58341 2.95626C11.3258 2.95626 12.9621 3.63483 14.192 4.86827C15.422 6.10172 16.1783 7.73806 16.1747 9.48044C16.1747 13.0783 13.1742 16.0046 9.57988 16.0046ZM13.1565 11.1203C12.9621 11.0214 11.9973 10.5478 11.817 10.4842C11.6368 10.417 11.506 10.3852 11.3753 10.5831C11.2445 10.781 10.8699 11.2193 10.7532 11.3536C10.6401 11.4843 10.5235 11.502 10.3291 11.4031C9.17698 10.827 8.42065 10.3746 7.6608 9.07047C7.45934 8.72411 7.86225 8.74885 8.23687 7.9996C8.30049 7.86883 8.26868 7.75573 8.2192 7.65678C8.16972 7.55782 7.77743 6.59297 7.61485 6.20068C7.45581 5.81898 7.29324 5.87199 7.17307 5.86492C7.05998 5.85786 6.92921 5.85786 6.79844 5.85786C6.66768 5.85786 6.45562 5.90733 6.27538 6.10172C6.09513 6.29963 5.58974 6.77322 5.58974 7.73806C5.58974 8.70291 6.29305 9.63594 6.38847 9.76671C6.48743 9.89748 7.77036 11.8766 9.73892 12.7284C10.983 13.2656 11.4707 13.3115 12.0927 13.2196C12.4709 13.1631 13.2519 12.7461 13.4145 12.2866C13.5771 11.8272 13.5771 11.4349 13.5276 11.3536C13.4817 11.2652 13.3509 11.2157 13.1565 11.1203Z" fill="#969696"/>
+                </g>
+                </g>
+                <defs>
+                <clipPath id="clip0_604_245">
+                <rect width="20" height="20" fill="white" transform="translate(0 0.5)"/>
+                </clipPath>
+                <clipPath id="clip1_604_245">
+                <rect width="15.8333" height="18.0952" fill="white" transform="translate(1.66675 0.5)"/>
+                </clipPath>
+                </defs>
+                </svg>                    
+                </a>
+            <a href="http://" target="_blank" rel="noopener noreferrer"><svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M18.75 10.4453C18.75 10.4023 18.75 10.3535 18.748 10.2969C18.7461 10.1387 18.7422 9.96094 18.7383 9.77148C18.7227 9.22656 18.6953 8.68359 18.6523 8.17187C18.5938 7.4668 18.5078 6.87891 18.3906 6.4375C18.267 5.97685 18.0246 5.55674 17.6876 5.21913C17.3507 4.88153 16.9311 4.63827 16.4707 4.51367C15.918 4.36523 14.8359 4.27344 13.3125 4.2168C12.5879 4.18945 11.8125 4.17187 11.0371 4.16211C10.7656 4.1582 10.5137 4.15625 10.2871 4.1543H9.71289C9.48633 4.15625 9.23438 4.1582 8.96289 4.16211C8.1875 4.17187 7.41211 4.18945 6.6875 4.2168C5.16406 4.27539 4.08008 4.36719 3.5293 4.51367C3.06875 4.63797 2.64896 4.88112 2.312 5.21877C1.97504 5.55642 1.73273 5.9767 1.60938 6.4375C1.49023 6.87891 1.40625 7.4668 1.34766 8.17187C1.30469 8.68359 1.27734 9.22656 1.26172 9.77148C1.25586 9.96094 1.25391 10.1387 1.25195 10.2969C1.25195 10.3535 1.25 10.4023 1.25 10.4453V10.5547C1.25 10.5977 1.25 10.6465 1.25195 10.7031C1.25391 10.8613 1.25781 11.0391 1.26172 11.2285C1.27734 11.7734 1.30469 12.3164 1.34766 12.8281C1.40625 13.5332 1.49219 14.1211 1.60938 14.5625C1.85938 15.498 2.59375 16.2363 3.5293 16.4863C4.08008 16.6348 5.16406 16.7266 6.6875 16.7832C7.41211 16.8105 8.1875 16.8281 8.96289 16.8379C9.23438 16.8418 9.48633 16.8438 9.71289 16.8457H10.2871C10.5137 16.8438 10.7656 16.8418 11.0371 16.8379C11.8125 16.8281 12.5879 16.8105 13.3125 16.7832C14.8359 16.7246 15.9199 16.6328 16.4707 16.4863C17.4062 16.2363 18.1406 15.5 18.3906 14.5625C18.5098 14.1211 18.5938 13.5332 18.6523 12.8281C18.6953 12.3164 18.7227 11.7734 18.7383 11.2285C18.7441 11.0391 18.7461 10.8613 18.748 10.7031C18.748 10.6465 18.75 10.5977 18.75 10.5547V10.4453ZM17.3438 10.5469C17.3438 10.5879 17.3438 10.6328 17.3418 10.6855C17.3398 10.8379 17.3359 11.0059 17.332 11.1875C17.3184 11.707 17.291 12.2266 17.25 12.709C17.1973 13.3379 17.123 13.8535 17.0312 14.1992C16.9102 14.6504 16.5547 15.0078 16.1055 15.127C15.6953 15.2363 14.6621 15.3242 13.2578 15.377C12.5469 15.4043 11.7812 15.4219 11.0176 15.4316C10.75 15.4355 10.502 15.4375 10.2793 15.4375H9.7207L8.98242 15.4316C8.21875 15.4219 7.45508 15.4043 6.74219 15.377C5.33789 15.3223 4.30273 15.2363 3.89453 15.127C3.44531 15.0059 3.08984 14.6504 2.96875 14.1992C2.87695 13.8535 2.80273 13.3379 2.75 12.709C2.70898 12.2266 2.68359 11.707 2.66797 11.1875C2.66211 11.0059 2.66016 10.8359 2.6582 10.6855C2.6582 10.6328 2.65625 10.5859 2.65625 10.5469V10.4531C2.65625 10.4121 2.65625 10.3672 2.6582 10.3145C2.66016 10.1621 2.66406 9.99414 2.66797 9.8125C2.68164 9.29297 2.70898 8.77344 2.75 8.29102C2.80273 7.66211 2.87695 7.14648 2.96875 6.80078C3.08984 6.34961 3.44531 5.99219 3.89453 5.87305C4.30469 5.76367 5.33789 5.67578 6.74219 5.62305C7.45313 5.5957 8.21875 5.57812 8.98242 5.56836C9.25 5.56445 9.49805 5.5625 9.7207 5.5625H10.2793L11.0176 5.56836C11.7812 5.57812 12.5449 5.5957 13.2578 5.62305C14.6621 5.67773 15.6973 5.76367 16.1055 5.87305C16.5547 5.99414 16.9102 6.34961 17.0312 6.80078C17.123 7.14648 17.1973 7.66211 17.25 8.29102C17.291 8.77344 17.3164 9.29297 17.332 9.8125C17.3379 9.99414 17.3398 10.1641 17.3418 10.3145C17.3418 10.3672 17.3438 10.4141 17.3438 10.4531V10.5469ZM8.26172 13.1172L12.793 10.4805L8.26172 7.88281V13.1172Z" fill="#969696"/>
+                </svg>
+                </a>
+            <a href="http://" target="_blank" rel="noopener noreferrer"><svg width="18" height="17" viewBox="0 0 18 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M6.85758 5.97419H9.95258V7.51585C10.3984 6.62919 11.5417 5.83252 13.2592 5.83252C16.5517 5.83252 17.3334 7.59752 17.3334 10.8359V16.8334H14.0001V11.5734C14.0001 9.72919 13.5542 8.68919 12.4192 8.68919C10.8451 8.68919 10.1909 9.81002 10.1909 11.5725V16.8334H6.85758V5.97419ZM1.14175 16.6917H4.47508V5.83252H1.14175V16.6917ZM4.95258 2.29169C4.9527 2.57108 4.89729 2.84772 4.78957 3.10551C4.68185 3.3633 4.52396 3.59711 4.32508 3.79335C3.92208 4.19387 3.37659 4.41806 2.80841 4.41669C2.24124 4.41631 1.69701 4.19269 1.29341 3.79419C1.09526 3.59728 0.937903 3.36321 0.830368 3.10538C0.722833 2.84755 0.667231 2.57104 0.666748 2.29169C0.666748 1.72752 0.891748 1.18752 1.29425 0.789187C1.69749 0.390152 2.24195 0.166438 2.80925 0.166687C3.37758 0.166687 3.92258 0.390854 4.32508 0.789187C4.72675 1.18752 4.95258 1.72752 4.95258 2.29169Z" fill="#969696"/>
+                </svg>
+                </a>
+            <a href="http://" target="_blank" rel="noopener noreferrer"><svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M18.3334 4.67702C17.7093 4.9662 17.0473 5.15601 16.3695 5.24015C17.0755 4.79754 17.6177 4.09665 17.8729 3.26155C17.2017 3.67814 16.4674 3.97165 15.7016 4.12941C15.0779 3.43437 14.1893 3 13.2057 3C11.3173 3 9.78628 4.6013 9.78628 6.57629C9.78628 6.85664 9.81655 7.12956 9.87482 7.39138C7.03302 7.24218 4.51349 5.81841 2.82697 3.65465C2.5327 4.18286 2.36408 4.79727 2.36408 5.45261C2.36408 6.69341 2.96779 7.78802 3.88524 8.4294C3.34224 8.41161 2.81118 8.25822 2.33641 7.98202C2.33621 7.997 2.33621 8.01199 2.33621 8.02703C2.33621 9.75982 3.51486 11.2053 5.07905 11.5339C4.57553 11.6771 4.04737 11.6981 3.53491 11.5952C3.97 13.016 5.23283 14.0499 6.72905 14.0789C5.55881 15.0381 4.08439 15.6098 2.48244 15.6098C2.2064 15.6098 1.93426 15.5929 1.66675 15.5599C3.17996 16.5746 4.97729 17.1667 6.90828 17.1667C13.1978 17.1667 16.6371 11.717 16.6371 6.99105C16.6371 6.83593 16.6338 6.6817 16.6272 6.52835C17.2966 6.0222 17.8744 5.39528 18.3334 4.67702Z" fill="#969696"/>
+                </svg>
+                
+                </a>
+        </div>
+    </div>
+</section>
+<hr class="border-gray-300">
+<!-- Header end -->
+
+<!-- Nav -->
+<section>
+    <div class=" container mx-auto flex justify-between h-[73px] ">
+        <nav>
+            <ul class=" flex gap-6 py-7 text-gray-400 fontFamily-[inter] text-sm  ">
+                <li>
+                    <button id="dropdownDefaultButton" data-dropdown-toggle="dropdown" class=" hover:text-[#005046] text-sm text-center inline-flex items-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800" type="button">Profile <svg class="w-4 h-4 ml-2" aria-hidden="true" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg></button>
+                    <!-- Dropdown menu -->
+                    <div id="dropdown" class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700">
+                        <ul class="py-2 text-sm text-gray-700 dark:text-gray-200" aria-labelledby="dropdownDefaultButton">
+                            <li>
+                                <a href="./profile/sejarah.html" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Sejarah Imigrasi</a>
+                            </li>
+                            <li>
+                                <a href="./profile/tugaspokokdanfungsi.html" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Tugas Pokok dan Fungsi</a>
+                            </li>
+                            <li>
+                                <a href="./profile/visimisi.html" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Visi Misi</a>
+                            </li>
+                            <li>
+                                <a href="./profile/strukturorganisasi.html" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Struktur Organisasi</a>
+                            </li>
+                            <li>
+                                <a href="./profile/profilepejabat.html" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Profile Pejabat</a>
+                            </li>
+                            <li>
+                                <a href="./profile/profilepejabat2.html" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Profile Pejabat</a>
+                            </li>
+                            <li>
+                                <a href="./profile/" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Profile Pejabat</a>
+                            </li>
+                            <li>
+                                <a href="./profile/mars.html" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Mars Imigrasi</a>
+                            </li>
+                            <li>
+                                <a href="./profile/maknalogo.html" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Makna Logo</a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li><button id="dropdownDefaultButton" data-dropdown-toggle="dropdown1" class=" hover:text-[#005046] text-sm text-center inline-flex items-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800" type="button">Regulasi <svg class="w-4 h-4 ml-2" aria-hidden="true" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg></button>
+                    <!-- Dropdown menu -->
+                    <div id="dropdown1" class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700">
+                        <ul class="py-2 text-sm text-gray-700 dark:text-gray-200" aria-labelledby="dropdownDefaultButton">
+                            <li>
+                                <a href="./regulasi/undang-undang.html" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Undang-Undang</a>
+                            </li>
+                            <li>
+                                <a href="./regulasi/peraturanmenteri.html" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Peraturan Menteri</a>
+                            </li>
+                            <li>
+                                <a href="./regulasi/peraturanpemerintah.html" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Peraturan Pemerintah</a>
+                            </li>
+                            <li>
+                                <a href="./regulasi/keputusanmenteri.html" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Keputusan Menteri</a>
+                            </li>
+                            <li>
+                                <a href="./regulasi/suratedaranirjen.html" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Surat Edaran Irjen</a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li><button id="dropdownDefaultButton" data-dropdown-toggle="dropdown2" class=" hover:text-[#005046] text-sm text-center inline-flex items-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800" type="button">Publikasi <svg class="w-4 h-4 ml-2" aria-hidden="true" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg></button>
+                    <!-- Dropdown menu -->
+                    <div id="dropdown2" class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700">
+                        <ul class="py-2 text-sm text-gray-700 dark:text-gray-200" aria-labelledby="dropdownDefaultButton">
+                          <li>
+                            <a href="./publikasi/bhumipura.html" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Bhumipura</a>
+                          </li>
+                          <li>
+                            <a href="./publikasi/jurnalkeimigrasian.html" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Jurnal</a>
+                          </li>
+                        </ul>
+                    </div>              
+                </li>
+                <li><button id="dropdownDefaultButton" data-dropdown-toggle="dropdown3" class=" hover:text-[#005046] text-sm text-center inline-flex items-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800" type="button">Informasi Publik <svg class="w-4 h-4 ml-2" aria-hidden="true" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg></button>
+                    <!-- Dropdown menu -->
+                    <div id="dropdown3" class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700">
+                        <ul class="py-2 text-sm text-gray-700 dark:text-gray-200" aria-labelledby="dropdownDefaultButton">
+                          <li>
+                            <a href="./informasipublik/wilayahkerja.html" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Wilayah Kerja</a>
+                          </li>
+                          <li>
+                            <a href="./informasipublik/jurnalkeimigrasian.html" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Jurnal</a>
+                          </li>
+                        </ul>
+                    </div>             
+                </li>
+                <li><button id="dropdownDefaultButton" data-dropdown-toggle="dropdown4" class=" hover:text-[#005046] text-sm text-center inline-flex items-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800" type="button">Prosedur Layanan <svg class="w-4 h-4 ml-2" aria-hidden="true" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg></button>
+                    <!-- Dropdown menu -->
+                    <div id="dropdown4" class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700">
+                        <ul class="py-2 text-sm text-gray-700 dark:text-gray-200" aria-labelledby="dropdownDefaultButton">
+                          <li>
+                            <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Dashboard</a>
+                          </li>
+                        </ul>
+                    </div>             
+                </li>
+                <li><button id="dropdownDefaultButton" data-dropdown-toggle="dropdown5" class=" hover:text-[#005046] text-sm text-center inline-flex items-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800" type="button">Pengaduan <svg class="w-4 h-4 ml-2" aria-hidden="true" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg></button>
+                    <!-- Dropdown menu -->
+                    <div id="dropdown5" class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700">
+                        <ul class="py-2 text-sm text-gray-700 dark:text-gray-200" aria-labelledby="dropdownDefaultButton">
+                          <li>
+                            <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Dashboard</a>
+                          </li>
+                        </ul>
+                    </div>               
+                </li>
+                <li><a href="./gallery/gallery.html" class="hover:text-[#005046]">Galery</a>               
+                </li>
+                <li><a href="./news/news.html" class="hover:text-[#005046]">News</a>              
+                </li>
+                <li><a href="./kontak/kontakkami.html" class="hover:text-[#005046]">Kontak Kami</a>             
+                 
+            </ul>
+        </nav>
+        <div class="flex flex-row justify-between items-center gap-4 py-6  ">
+            <button type="button" class="flex">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 text-gray-400">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z" />
+                  </svg>                      
+            <button type="button" class="text-sm bg-[#005046] rounded-xl order-1 py-3 px-6 text-white hover:bg-green-800">Registrasi</button>
+        </div>
+    </div>
+</section>
+<hr class="drop-shadow-2xl">
+
+        <section class="bg-gray-50 h-60 py-16">
+            <div class="container">
+            <p class=" font-bold text-3xl   ">
+                Makna Logo
+            </p>
+            <p class=" text-gray-400 pt-6 ">
+                Prebör domisaning. Kemkastrering. Fagt kaskade. Bist decissa. Stereodiktisk vasyns att preteng.
+            </p>
+            </div>
+        </section>
+
+        <section class=" container mx-auto pt-20 pb-24">
+            <img src="./img/makna.png" alt="" class="">
+        </section>
+
+        <section class="bg-[#00221E] py-24">
+            <div class="container mx-auto text-white ">
+                <div class="grid lg:grid-cols-8 grid-cols-3">
+                    <div class="lg:col-span-3 col-span-5 sm:pb-5 ">
+                        <a href="/">
+                            <div class="flex gap-4">
+                            <img src="./img/image1.png" alt="" class="w-24">
+                            <div class="">
+                                <h1 class="font-semibold">Kantor imigrasi Kelas XXX (edit)</h1>
+                                <hr>
+                                <p class="">Kantor Wilayah Kemenkumham Nama Provinsi (edit)</p>
+    
+                            </div>
+                            </div>
+                            <p class="text-base pt-10 ">Prebör domisaning. Kemkastrering. Fagt kaskade. Bist decissa. Stereodiktisk vasyns att preteng. Mons byning fihör. Pore tolig. Epire kanesk. Monosa medelgam tisk.</p>
+                            <ul class="flex mt-10 gap-5 justify-center md:justify-start ">
+                                <li><img src="./img/instagram.png" alt=""></li>
+                                <li><img src="./img/wa.png" alt=""></li>
+                                <li><img src="./img/youtube.png" alt=""></li>
+                                <li><img src="./img/linkedin.png" alt=""></li>
+                                <li><img src="./img/twiter.png" alt=""></li>
+                            </ul>
+                        </a>
+    
+                    </div>
+                    <div class="sm:col-span-1 col-span-2 ">
+                        <h1 class="font-semibold">
+                            Home
+                        </h1>
+                        <ul class="flex flex-col gap-6 mt-6 space-y-1">
+                            <li><a href="" class="hover:text-green-200">Beranda</a></li>
+                            <li><a href="" class="hover:text-green-200">Layanan Keimigrasian</a></li>
+                            <li><a href="" class="hover:text-green-200">Gallery</a></li>
+                            <li><a href="" class="hover:text-green-200">Our News</a></li>
+                        </ul>
+                    </div>
+    
+                    <div class="sm:col-span-2 col-span-3 ">
+                        <h1 class="font-semibold">
+                            Contact
+                        </h1>
+                        <ul class="flex flex-col gap-6 mt-6 space-y-1">
+                            <li><a href=""><img src="./img/co1.png" alt="" class="float-left mr-2 py-1"> (406) 555-0120</a></li>
+                            <li><a href="" class="hover:text-green-200"><img src="./img/co2.png" alt="" class="float-left mr-2 py-1"> Imigrasisukabumi123@gmail.com</a></li>
+                            <li><a href=""><img src="./img/co3.png" alt="" class="float-left mr-2 py-1">2972 Westheimer Rd. Santa Ana, Illinois 85486 </a></li>
+                        </ul>
+                    </div>
+    
+                    <div class="sm:col-span-2 col-span-4 ">
+                        <h1 class="font-semibold">
+                            Maps Location
+                        </h1>
+                        <ul class="flex flex-col gap-6 mt-6 space-y-1">
+                            <li><a href=""><img src="./img/maps.png" alt="" class=""></a></li>
+                            
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="container mx-auto mt-12">
+                <p class="text-white grid justify-end">
+                    © 2022 Mangcoding. All rights reserved.
+                </p>
+            </div>
+        </section>
+    
+
+        <script src="https://unpkg.com/flowbite@1.5.4/dist/flowbite.js"></script>
+</body>
+</html>

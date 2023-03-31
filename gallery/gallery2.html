@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          container: {
+              center: true,
+              padding: {
+                  DEFAULT: '1rem',
+                  sm: '2rem',
+                  lg: '4rem',
+                  xl: '5rem',
+                  '2xl': '6rem',
+              },
+          },
+          extend: {
+            colors: {
+              clifford: '#da373d',
+            }
+          }
+        }
+      }
+    </script>
+    <title>Document</title>
+</head>
+<body>
+
+    <div class="container relative">
+        <img src="img/gr1.png" alt="" class="container">
+        <div class="absolute top-0 left-0 w-full h-full flex items-center justify-center">
+          <h1 class="text-black text-4xl font-bold">Teks di atas gambar</h1>
+        </div>
+      </div>
+    
+</body>
+</html>
