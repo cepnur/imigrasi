@@ -4,6 +4,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+        href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900&display=swap"
+        rel="stylesheet" />
+    <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/tw-elements/dist/css/index.min.css" />
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
         tailwind.config = {
@@ -239,65 +245,128 @@
     </section>
 
     
-<div id="default-carousel" class="relative w-full" data-carousel="slide">
-    <!-- Carousel wrapper -->
-    <div class="relative  overflow-hidden rounded-lg md:h-96">
-         <!-- Item 1 -->
-        <div class="hidden duration-700 ease-in-out" data-carousel-item>
-            <section class=" flex flex-col bg-gradient-to-b from-[#F9BC3F] to-[#407A77] items-center">
-                <div class="container mx-auto flex justify-between">
-                    <div class="flex flex-col gap-10 py-32 ">
-                        <div class=" flex flex-col gap-10">
-                            <div class="flex flex-col gap-4">
-                                <p class="text-white">Lorem Ipsum</p>
-                                <p class="text-5xl font-bold text-white">Prebör domisaning. Kemkastrering. Fagt kaskade. Bist decissa.</p>
-                            </div>
-                            <p class="text-white">Prebör domisaning. Kemkastrering. Fagt kaskade. Bist decissa. Stereodiktisk vasyns att preteng. 
-                            Mons byning fihör. Pore tolig. Epire kanesk. Monosa medelgam tisk.</p>
-                        </div>
-                        <div class="flex gap-6">
-                            <img src="./img/Appstore.png" alt="">
-                            <img src="./img/playstore.png" alt="">
-                        </div>
-                    </div>
-                    <img src="./img/image3.png" alt="">
+    <div
+    id="carouselExampleIndicators"
+    class="relative"
+    data-te-carousel-init
+    data-te-carousel-slide>
+    <div
+      class="absolute right-0 bottom-0 left-0 z-[2] mx-[15%] mb-4 flex list-none justify-center p-0"
+      data-te-carousel-indicators>
+      <button
+        type="button"
+        data-te-target="#carouselExampleIndicators"
+        data-te-slide-to="0"
+        data-te-carousel-active
+        class="mx-[3px] box-content h-[3px] w-[30px] flex-initial cursor-pointer border-0 border-y-[10px] border-solid border-transparent bg-white bg-clip-padding p-0 -indent-[999px] opacity-50 transition-opacity duration-[600ms] ease-[cubic-bezier(0.25,0.1,0.25,1.0)] motion-reduce:transition-none"
+        aria-current="true"
+        aria-label="Slide 1"></button>
+      <button
+        type="button"
+        data-te-target="#carouselExampleIndicators"
+        data-te-slide-to="1"
+        class="mx-[3px] box-content h-[3px] w-[30px] flex-initial cursor-pointer border-0 border-y-[10px] border-solid border-transparent bg-white bg-clip-padding p-0 -indent-[999px] opacity-50 transition-opacity duration-[600ms] ease-[cubic-bezier(0.25,0.1,0.25,1.0)] motion-reduce:transition-none"
+        aria-label="Slide 2"></button>
+      <button
+        type="button"
+        data-te-target="#carouselExampleIndicators"
+        data-te-slide-to="2"
+        class="mx-[3px] box-content h-[3px] w-[30px] flex-initial cursor-pointer border-0 border-y-[10px] border-solid border-transparent bg-white bg-clip-padding p-0 -indent-[999px] opacity-50 transition-opacity duration-[600ms] ease-[cubic-bezier(0.25,0.1,0.25,1.0)] motion-reduce:transition-none"
+        aria-label="Slide 3"></button>
+    </div>
+    <div
+      class="relative w-full overflow-hidden after:clear-both after:block after:content-['']">
+      <div
+        class="relative float-left -mr-[100%] w-full transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none"
+        data-te-carousel-item
+        data-te-carousel-active>
+        <section class="flex flex bg-gradient-to-b from-[#F9BC3F] to-[#407A77] items-center">
+            <div class="container mx-auto flex flex-col justify-between">
+              <div class="flex flex-col gap-10 py-10 md:py-32">
+                <div class="flex flex-col gap-10">
+                  <div class="flex flex-col gap-4">
+                    <p class="text-white">Lorem Ipsum</p>
+                    <p class="text-5xl font-bold text-white">Prebör domisaning. Kemkastrering. Fagt kaskade. Bist decissa.</p>
+                  </div>
+                  <p class="text-white">Prebör domisaning. Kemkastrering. Fagt kaskade. Bist decissa. Stereodiktisk vasyns att preteng. 
+                  Mons byning fihör. Pore tolig. Epire kanesk. Monosa medelgam tisk.</p>
                 </div>
-                <svg xmlns="http://www.w3.org/2000/svg"  fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-8 h-8 text-white ">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="M6.75 12a.75.75 0 11-1.5 0 .75.75 0 011.5 0zM12.75 12a.75.75 0 11-1.5 0 .75.75 0 011.5 0zM18.75 12a.75.75 0 11-1.5 0 .75.75 0 011.5 0z" />
-                  </svg>
-            </section>
-        </div>
-        <!-- Item 2 -->
-        <div class="hidden duration-700 ease-in-out" data-carousel-item>
-            <img src="/docs/images/carousel/carousel-2.svg" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
-        </div>
-        <!-- Item 3 -->
-        <div class="hidden duration-700 ease-in-out" data-carousel-item>
-            <img src="/docs/images/carousel/carousel-3.svg" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
-        </div>
-       
+                <div class="flex gap-6">
+                  <img src="./img/Appstore.png" alt="">
+                  <img src="./img/playstore.png" alt="">
+                </div>
+              </div>
+              <img src="./img/image3.png" alt="" class=" md:w-auto">
+            </div>
+          </section>
+          
+      </div>
+      <div
+        class="relative float-left -mr-[100%] hidden w-full transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none"
+        data-te-carousel-item>
+        <img
+          src="https://mdbcdn.b-cdn.net/img/new/slides/042.webp"
+          class="block w-full"
+          alt="Camera" />
+      </div>
+      <div
+        class="relative float-left -mr-[100%] hidden w-full transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none"
+        data-te-carousel-item>
+        <img
+          src="https://mdbcdn.b-cdn.net/img/new/slides/043.webp"
+          class="block w-full"
+          alt="Exotic Fruits" />
+      </div>
     </div>
-    <!-- Slider indicators -->
-    <div class="absolute z-30 flex space-x-3 -translate-x-1/2 bottom-5 left-1/2">
-        <button type="button" class="w-2 h-2 rounded-full" aria-current="true" aria-label="Slide 1" data-carousel-slide-to="0"></button>
-        <button type="button" class="w-2 h-2 rounded-full" aria-current="false" aria-label="Slide 2" data-carousel-slide-to="1"></button>
-        <button type="button" class="w-2 h-2 rounded-full" aria-current="false" aria-label="Slide 3" data-carousel-slide-to="2"></button>
-        
-    </div>
-    <!-- Slider controls -->
-    <button type="button" class="absolute top-0 left-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-prev>
-        <span class="inline-flex items-center justify-center w-8 h-8 rounded-full sm:w-10 sm:h-10 bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
-            <svg aria-hidden="true" class="w-5 h-5 text-white sm:w-6 sm:h-6 dark:text-gray-800" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path></svg>
-            <span class="sr-only">Previous</span>
-        </span>
+    <button
+      class="absolute top-0 bottom-0 left-0 z-[1] flex w-[15%] items-center justify-center border-0 bg-none p-0 text-center text-white opacity-50 transition-opacity duration-150 ease-[cubic-bezier(0.25,0.1,0.25,1.0)] hover:text-white hover:no-underline hover:opacity-90 hover:outline-none focus:text-white focus:no-underline focus:opacity-90 focus:outline-none motion-reduce:transition-none"
+      type="button"
+      data-te-target="#carouselExampleIndicators"
+      data-te-slide="prev">
+      <span class="inline-block h-8 w-8">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="currentColor"
+          class="h-6 w-6">
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M15.75 19.5L8.25 12l7.5-7.5" />
+        </svg>
+      </span>
+      <span
+        class="!absolute !-m-px !h-px !w-px !overflow-hidden !whitespace-nowrap !border-0 !p-0 ![clip:rect(0,0,0,0)]"
+        >Previous</span
+      >
     </button>
-    <button type="button" class="absolute top-0 right-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-next>
-        <span class="inline-flex items-center justify-center w-8 h-8 rounded-full sm:w-10 sm:h-10 bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
-            <svg aria-hidden="true" class="w-5 h-5 text-white sm:w-6 sm:h-6 dark:text-gray-800" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
-            <span class="sr-only">Next</span>
-        </span>
+    <button
+      class="absolute top-0 bottom-0 right-0 z-[1] flex w-[15%] items-center justify-center border-0 bg-none p-0 text-center text-white opacity-50 transition-opacity duration-150 ease-[cubic-bezier(0.25,0.1,0.25,1.0)] hover:text-white hover:no-underline hover:opacity-90 hover:outline-none focus:text-white focus:no-underline focus:opacity-90 focus:outline-none motion-reduce:transition-none"
+      type="button"
+      data-te-target="#carouselExampleIndicators"
+      data-te-slide="next">
+      <span class="inline-block h-8 w-8">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="currentColor"
+          class="h-6 w-6">
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+        </svg>
+      </span>
+      <span
+        class="!absolute !-m-px !h-px !w-px !overflow-hidden !whitespace-nowrap !border-0 !p-0 ![clip:rect(0,0,0,0)]"
+        >Next</span
+      >
     </button>
-</div>
+  </div>
 
       
     
@@ -559,92 +628,122 @@
         <button type="button" class="flex items-center bg-[#005046] text-center justify-center  rounded-lg order-2 text-white py-4 px-8 ">View More</button>
     </section>
 
-    <!-- footer -->
-    <section class=" mx-auto bg-[#00221E] flex flex-row gap-x-14 py-20 pl-80 ">
-        <div class=" flex flex-col text-white gap-6 pr-8">
-            <div class="flex items-center justify-center gap-2.5 ">
-                <img class="" src="./img/image1.png" alt="">
-                <div class="gap-1">
-                    <h1 class=" font-bold">
-                        Kantor imigrasi Kelas XXX (edit)
-                    </h1>
-                    <hr class="border-white">
-                    <p>
-                        Kantor Wilayah Kemenkumham Nama <br> Provinsi (edit)
-                    </p>
+
+   
+
+    <section>
+        <div class="container flex flex-col mx-auto ">
+            <div class="flex pb-24">
+                <div class="pt-8">
+                    <div class="flex flex-col gap-4 bg-gray-50 rounded-lg py-10 px-8 font-bold">
+                        <div class="flex justify-between">
+                            <button class="text-lg">
+                                Filter Us
+                            </button>
+                            <button>
+                                <img src="./img/s1.png" alt="">
+                            </button>
+                        </div>
+                        <div class="flex flex-col gap-2">
+                            <p class=" text-base">Search</p>
+                            <div class="flex justify-between relative">
+                                <input type="text" placeholder="Search" class=" py-3 bg-white rounded-full font-semibold px-14">
+                                    <img src="./img/Group23.png" alt="" class="absolute left-64 top-4 " >
+                            </div>
+                        </div>
+                        <div class="flex flex-col gap-4">
+                            <p class=" ">Categories</p>
+                            <div class="flex justify-between">
+                                <select style="border-radius: 100px;" name="cars" id="cars" class="py-3 px-24">
+                                    <option selected disabled value="volvo">Categories</option>
+                                    <option value="saab">Saab</option>
+                                    <option value="opel">Opel</option>
+                                    <option value="audi">Audi</option>
+                                  </select>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex flex-col">
+                    <div class="flex gap-6 pt-8 justify-end">
+                        <div class="">
+                            <label for="" class="font-bold pr-2 ">Show</label>
+                                <select name="" id="" class="bg-white py-3 border-2 rounded-xl px-6 text-[#005046] font-bold items-center ">
+                                    <option value="" class="">4 Result per page</option>
+                                    <option value="" class="">6 Result per page</option>
+                                    <option value="" class="">8 Result per page</option>
+                                </select> 
+                        </div>
+                        <div class="">
+                            <label for="" class="font-bold pr-2">Ordering</label>
+                                <select name="" id="" class="bg-white py-3 border-2 rounded-xl px-6 text-[#005046] font-bold">
+                                    <option value="" class="">Newest First</option>
+                                    <option value="" class="">Latest First</option>
+                                    <option value="" class="">Date Change</option>
+                                </select>     
+                        </div>
+                       
+                        <div class="flex gap-4">
+                            <button class="hover:text-[#005046]">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-8 h-8">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6A2.25 2.25 0 016 3.75h2.25A2.25 2.25 0 0110.5 6v2.25a2.25 2.25 0 01-2.25 2.25H6a2.25 2.25 0 01-2.25-2.25V6zM3.75 15.75A2.25 2.25 0 016 13.5h2.25a2.25 2.25 0 012.25 2.25V18a2.25 2.25 0 01-2.25 2.25H6A2.25 2.25 0 013.75 18v-2.25zM13.5 6a2.25 2.25 0 012.25-2.25H18A2.25 2.25 0 0120.25 6v2.25A2.25 2.25 0 0118 10.5h-2.25a2.25 2.25 0 01-2.25-2.25V6zM13.5 15.75a2.25 2.25 0 012.25-2.25H18a2.25 2.25 0 012.25 2.25V18A2.25 2.25 0 0118 20.25h-2.25A2.25 2.25 0 0113.5 18v-2.25z" />
+                                  </svg>
+                            </button>
+                            <button class="hover:text-[#005046]">
+                                <svg class="h-8 w-8" viewBox="0 0 24 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M10.6667 16H13.3333C14.0667 16 14.6667 15.4 14.6667 14.6667C14.6667 13.9333 14.0667 13.3333 13.3333 13.3333H10.6667C9.93333 13.3333 9.33333 13.9333 9.33333 14.6667C9.33333 15.4 9.93333 16 10.6667 16ZM0 1.33333C0 2.06667 0.6 2.66667 1.33333 2.66667H22.6667C23.4 2.66667 24 2.06667 24 1.33333C24 0.6 23.4 0 22.6667 0H1.33333C0.6 0 0 0.6 0 1.33333ZM5.33333 9.33333H18.6667C19.4 9.33333 20 8.73333 20 8C20 7.26667 19.4 6.66667 18.6667 6.66667H5.33333C4.6 6.66667 4 7.26667 4 8C4 8.73333 4.6 9.33333 5.33333 9.33333Z" fill="#E6E6E6"/>
+                                    </svg>   
+                            </button>
+                        </div>
+                    </div>
+                    <div class=" flex flex-col gap-6 pl-12">
+                        <div class="flex shadow rounded-xl items-center justify-center px-6 py-8 gap-4">
+                            <img src="./img/sg1.png" alt="">
+                            <div class="flex flex-col gap-3">
+                                <button type="button" class="font-bold text-2xl text-left">Biaya Keimigrasian</button>
+                                <p class="text-gray-400">September 2, 2022</p>
+                                <p class="text-gray-400">Mangcoding is a team of developers that will help build a website for your company, helping to market in a modern way</p>
+                            </div>
+                        </div>
+                        <div class="flex shadow rounded-xl items-center justify-center px-6 py-8 gap-4">
+                            <img src="./img/sg2.png" alt="">
+                            <div class="flex flex-col gap-3">
+                                <button type="button" class="font-bold text-2xl text-left">8 Alasan Perlunya Melakukan Pencadangan</button>
+                                <p class="text-gray-400">September 2, 2022</p>
+                                <p class="text-gray-400">Mangcoding is a team of developers that will help build a website for your company, helping to market in a modern way</p>
+                            </div>
+                        </div>
+                        <div class="flex shadow rounded-xl items-center justify-center py-6 px-4 gap-4">
+                            <div class="flex flex-col gap-3">
+                                <button type="button" class="font-bold text-2xl text-left">Informasi Kartu Perjalanan Pebisnis APEC</button>
+                                <p class="text-gray-400">September 2, 2022</p>
+                                <p class="text-gray-400">Mangcoding is a team of developers that will help build a website for your company, helping to market in a modern way</p>
+                            </div>
+                        </div>
+                        <div class="flex shadow rounded-xl items-center justify-center py-6 px-4">
+                            <div class="flex flex-col gap-3">
+                                <button type="button" class="font-bold text-2xl text-left">Permohonan Paspor Baru Untuk TKI</button>
+                                <p class="text-gray-400">September 2, 2022</p>
+                                <p class="text-gray-400">Mangcoding is a team of developers that will help build a website for your company, helping to market in a modern way</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class=" flex justify-center items-center pt-10">
+                    <button type="button" class="bg-[#005046] rounded-xl py-3 px-4 text-sm text-white hover:bg-green-800">Load More</button>
+                    </div>
                 </div>
             </div>
-
-            <p class=" font-normal text-base w-[350px] py-4 ">
-                Prebör domisaning. Kemkastrering. Fagt kaskade. Bist decissa. Stereodiktisk vasyns att preteng. Mons byning fihör. Pore tolig. Epire kanesk. Monosa medelgam tisk.
-            </p>
-            <div class="flex flex-row gap-4">
-                <a href="http://" target="_blank" rel="noopener noreferrer"><img src="./img/instagram.png" alt=""></a>
-                <a href="http://" target="_blank" rel="noopener noreferrer"><img src="./img/wa.png" alt=""></a>
-                <a href="http://" target="_blank" rel="noopener noreferrer"><img src="./img/youtube.png" alt=""></a>
-                <a href="http://" target="_blank" rel="noopener noreferrer"><img src="./img/linkedin.png" alt=""></a>
-                <a href="http://" target="_blank" rel="noopener noreferrer"><img src="./img/twiter.png" alt=""></a>
-            </div>
         </div>
-
-        <div class="flex flex-col items-start gap-4 text-white fontFamily-[inter] ">
-            <button type="button">
-                <p class="font-bold">
-                    Home
-                </p>
-            </button>
-            <button type="button">
-                <p class="">
-                    Beranda
-                </p>
-            </button>
-            <button type="button">
-                <p class="">
-                    Layanan Keimigrasian
-                </p>
-            </button>
-            <button type="button">
-                <p class="">
-                    Gallery
-                </p>
-            </button>
-            <button type="button">
-                <p class="">
-                    Our News
-                </p>
-            </button>
-        </div>
-
-        <div class="flex flex-col gap-4 text-white  ">
-            <p class="font-bold">
-                Contact
-            </p>
-            <div class="">
-                <img src="./img/co1.png" alt="" class="float-left mr-4">
-                <p>(406) 555-0120</p>
-            </div>
-            <div class="">
-                <img src="./img/co2.png" alt="" class="float-left mr-4">
-                <p>Imigrasisukabumi123@gmail.com</p>
-            </div>
-            <div class="">
-                <img src="./img/co3.png" alt="" class="float-left mr-4">
-                <p>2972 Westheimer Rd. Santa Ana, Illinois 85486</p>
-            </div>
-
-        </div>
-
-        <div class="flex flex-col gap-4 ">
-            <p class=" font-bold text-white ">
-                Maps Location
-            </p>
-            <a href="http://" target="_blank" rel="noopener noreferrer"><img src="./img/maps.png" alt=""></a>
-        </div>
-        
     </section>
+                
+    
+
+    
+
+    
 
 
-
+    <script src="https://cdn.jsdelivr.net/npm/tw-elements/dist/js/index.min.js"></script>
     <script src="https://unpkg.com/flowbite@1.5.4/dist/flowbite.js"></script>
 </body>
 </html>
